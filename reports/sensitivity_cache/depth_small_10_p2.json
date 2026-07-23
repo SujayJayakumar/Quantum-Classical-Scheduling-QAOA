@@ -1,0 +1,15 @@
+{
+  "bucket": "small",
+  "label": "small_10",
+  "qubits": 16,
+  "p": 2,
+  "feasible": false,
+  "energy": -2317.463257575758,
+  "energy_gap": 163.61856060606078,
+  "makespan": 4188685,
+  "overlap": 62.5,
+  "iterations": 100,
+  "runtime": 0.239229217171669,
+  "cpsat_makespan": 4612447,
+  "cpsat_feasible": false
+}
