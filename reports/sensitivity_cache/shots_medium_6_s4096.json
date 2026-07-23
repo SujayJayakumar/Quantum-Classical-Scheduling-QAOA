@@ -1,0 +1,11 @@
+{
+  "label": "medium_6",
+  "qubits": 24,
+  "p": 1,
+  "shots": 4096,
+  "feasible": false,
+  "energy": -160.2,
+  "energy_gap": 8.856060606060623,
+  "makespan": 12745697,
+  "runtime": 4.873277873033658
+}
