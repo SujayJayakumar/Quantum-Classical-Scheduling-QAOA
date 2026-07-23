@@ -13,7 +13,7 @@ This repository contains the research pipeline for a hybrid quantum-classical HP
 - `data/merged_all_jobs.jsonl`: raw trace source file
 - `data/nodes.csv`, `data/node_status.csv`, `data/node_metrics.csv`, `data/cpu_metrics.csv`: optional cluster-state tables for node reconstruction
 
-- All content of 'data' folder are hosted on zenodo, please download the dataset from the link : https://doi.org/10.5281/zenodo.21504068     and place it under the 'data' folder.
+- Raw files of 'data' folder are hosted on zenodo, please download the dataset from the link : https://doi.org/10.5281/zenodo.21504068 and place it under the 'data' folder if you want to reconstruct the windows, but the folder on github as such has the sufficient data for reproducing the scripts.
 
 ## Main Flow
 
