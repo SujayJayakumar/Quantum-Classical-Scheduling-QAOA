@@ -1,0 +1,1266 @@
+{
+  "complexity": {
+    "small_0": {
+      "qubits_b": 16,
+      "couplings_b": 8,
+      "qubits_bp": 16,
+      "couplings_bp": 64,
+      "added_variables": 0,
+      "added_couplings": 56
+    },
+    "small_1": {
+      "qubits_b": 16,
+      "couplings_b": 8,
+      "qubits_bp": 16,
+      "couplings_bp": 64,
+      "added_variables": 0,
+      "added_couplings": 56
+    },
+    "small_2": {
+      "qubits_b": 16,
+      "couplings_b": 8,
+      "qubits_bp": 16,
+      "couplings_bp": 64,
+      "added_variables": 0,
+      "added_couplings": 56
+    },
+    "small_3": {
+      "qubits_b": 16,
+      "couplings_b": 8,
+      "qubits_bp": 16,
+      "couplings_bp": 64,
+      "added_variables": 0,
+      "added_couplings": 56
+    },
+    "small_4": {
+      "qubits_b": 16,
+      "couplings_b": 8,
+      "qubits_bp": 16,
+      "couplings_bp": 64,
+      "added_variables": 0,
+      "added_couplings": 56
+    },
+    "small_5": {
+      "qubits_b": 16,
+      "couplings_b": 8,
+      "qubits_bp": 16,
+      "couplings_bp": 64,
+      "added_variables": 0,
+      "added_couplings": 56
+    },
+    "small_6": {
+      "qubits_b": 16,
+      "couplings_b": 8,
+      "qubits_bp": 16,
+      "couplings_bp": 64,
+      "added_variables": 0,
+      "added_couplings": 56
+    },
+    "small_7": {
+      "qubits_b": 16,
+      "couplings_b": 8,
+      "qubits_bp": 16,
+      "couplings_bp": 64,
+      "added_variables": 0,
+      "added_couplings": 56
+    },
+    "small_8": {
+      "qubits_b": 16,
+      "couplings_b": 8,
+      "qubits_bp": 16,
+      "couplings_bp": 64,
+      "added_variables": 0,
+      "added_couplings": 56
+    },
+    "small_9": {
+      "qubits_b": 16,
+      "couplings_b": 8,
+      "qubits_bp": 16,
+      "couplings_bp": 64,
+      "added_variables": 0,
+      "added_couplings": 56
+    },
+    "small_10": {
+      "qubits_b": 16,
+      "couplings_b": 8,
+      "qubits_bp": 16,
+      "couplings_bp": 64,
+      "added_variables": 0,
+      "added_couplings": 56
+    },
+    "small_11": {
+      "qubits_b": 16,
+      "couplings_b": 8,
+      "qubits_bp": 16,
+      "couplings_bp": 64,
+      "added_variables": 0,
+      "added_couplings": 56
+    },
+    "small_12": {
+      "qubits_b": 16,
+      "couplings_b": 8,
+      "qubits_bp": 16,
+      "couplings_bp": 64,
+      "added_variables": 0,
+      "added_couplings": 56
+    },
+    "small_13": {
+      "qubits_b": 16,
+      "couplings_b": 8,
+      "qubits_bp": 16,
+      "couplings_bp": 64,
+      "added_variables": 0,
+      "added_couplings": 56
+    },
+    "small_14": {
+      "qubits_b": 16,
+      "couplings_b": 8,
+      "qubits_bp": 16,
+      "couplings_bp": 64,
+      "added_variables": 0,
+      "added_couplings": 56
+    },
+    "medium_0": {
+      "qubits_b": 24,
+      "couplings_b": 12,
+      "qubits_bp": 24,
+      "couplings_bp": 144,
+      "added_variables": 0,
+      "added_couplings": 132
+    },
+    "medium_1": {
+      "qubits_b": 20,
+      "couplings_b": 10,
+      "qubits_bp": 20,
+      "couplings_bp": 100,
+      "added_variables": 0,
+      "added_couplings": 90
+    },
+    "medium_2": {
+      "qubits_b": 24,
+      "couplings_b": 12,
+      "qubits_bp": 24,
+      "couplings_bp": 144,
+      "added_variables": 0,
+      "added_couplings": 132
+    },
+    "medium_3": {
+      "qubits_b": 20,
+      "couplings_b": 10,
+      "qubits_bp": 20,
+      "couplings_bp": 100,
+      "added_variables": 0,
+      "added_couplings": 90
+    },
+    "medium_4": {
+      "qubits_b": 20,
+      "couplings_b": 10,
+      "qubits_bp": 20,
+      "couplings_bp": 100,
+      "added_variables": 0,
+      "added_couplings": 90
+    },
+    "medium_5": {
+      "qubits_b": 24,
+      "couplings_b": 12,
+      "qubits_bp": 24,
+      "couplings_bp": 144,
+      "added_variables": 0,
+      "added_couplings": 132
+    },
+    "medium_6": {
+      "qubits_b": 24,
+      "couplings_b": 12,
+      "qubits_bp": 24,
+      "couplings_bp": 144,
+      "added_variables": 0,
+      "added_couplings": 132
+    },
+    "medium_7": {
+      "qubits_b": 24,
+      "couplings_b": 12,
+      "qubits_bp": 24,
+      "couplings_bp": 144,
+      "added_variables": 0,
+      "added_couplings": 132
+    },
+    "medium_8": {
+      "qubits_b": 20,
+      "couplings_b": 10,
+      "qubits_bp": 20,
+      "couplings_bp": 100,
+      "added_variables": 0,
+      "added_couplings": 90
+    },
+    "medium_9": {
+      "qubits_b": 24,
+      "couplings_b": 12,
+      "qubits_bp": 24,
+      "couplings_bp": 144,
+      "added_variables": 0,
+      "added_couplings": 132
+    },
+    "medium_10": {
+      "qubits_b": 24,
+      "couplings_b": 12,
+      "qubits_bp": 24,
+      "couplings_bp": 144,
+      "added_variables": 0,
+      "added_couplings": 132
+    },
+    "medium_11": {
+      "qubits_b": 20,
+      "couplings_b": 10,
+      "qubits_bp": 20,
+      "couplings_bp": 100,
+      "added_variables": 0,
+      "added_couplings": 90
+    },
+    "medium_12": {
+      "qubits_b": 24,
+      "couplings_b": 12,
+      "qubits_bp": 24,
+      "couplings_bp": 144,
+      "added_variables": 0,
+      "added_couplings": 132
+    },
+    "medium_13": {
+      "qubits_b": 24,
+      "couplings_b": 12,
+      "qubits_bp": 24,
+      "couplings_bp": 144,
+      "added_variables": 0,
+      "added_couplings": 132
+    },
+    "medium_14": {
+      "qubits_b": 20,
+      "couplings_b": 10,
+      "qubits_bp": 20,
+      "couplings_bp": 100,
+      "added_variables": 0,
+      "added_couplings": 90
+    },
+    "large_0": {
+      "qubits_b": 32,
+      "couplings_b": 16,
+      "qubits_bp": 32,
+      "couplings_bp": 256,
+      "added_variables": 0,
+      "added_couplings": 240
+    },
+    "large_1": {
+      "qubits_b": 30,
+      "couplings_b": 30,
+      "qubits_bp": 30,
+      "couplings_bp": 165,
+      "added_variables": 0,
+      "added_couplings": 135
+    },
+    "large_2": {
+      "qubits_b": 32,
+      "couplings_b": 16,
+      "qubits_bp": 32,
+      "couplings_bp": 256,
+      "added_variables": 0,
+      "added_couplings": 240
+    },
+    "large_3": {
+      "qubits_b": 30,
+      "couplings_b": 30,
+      "qubits_bp": 30,
+      "couplings_bp": 165,
+      "added_variables": 0,
+      "added_couplings": 135
+    },
+    "large_4": {
+      "qubits_b": 30,
+      "couplings_b": 30,
+      "qubits_bp": 30,
+      "couplings_bp": 165,
+      "added_variables": 0,
+      "added_couplings": 135
+    },
+    "large_5": {
+      "qubits_b": 32,
+      "couplings_b": 16,
+      "qubits_bp": 32,
+      "couplings_bp": 256,
+      "added_variables": 0,
+      "added_couplings": 240
+    },
+    "large_6": {
+      "qubits_b": 32,
+      "couplings_b": 16,
+      "qubits_bp": 32,
+      "couplings_bp": 256,
+      "added_variables": 0,
+      "added_couplings": 240
+    },
+    "large_7": {
+      "qubits_b": 32,
+      "couplings_b": 16,
+      "qubits_bp": 32,
+      "couplings_bp": 256,
+      "added_variables": 0,
+      "added_couplings": 240
+    },
+    "large_8": {
+      "qubits_b": 32,
+      "couplings_b": 16,
+      "qubits_bp": 32,
+      "couplings_bp": 256,
+      "added_variables": 0,
+      "added_couplings": 240
+    },
+    "large_9": {
+      "qubits_b": 32,
+      "couplings_b": 16,
+      "qubits_bp": 32,
+      "couplings_bp": 256,
+      "added_variables": 0,
+      "added_couplings": 240
+    },
+    "large_10": {
+      "qubits_b": 30,
+      "couplings_b": 30,
+      "qubits_bp": 30,
+      "couplings_bp": 165,
+      "added_variables": 0,
+      "added_couplings": 135
+    },
+    "large_11": {
+      "qubits_b": 32,
+      "couplings_b": 16,
+      "qubits_bp": 32,
+      "couplings_bp": 256,
+      "added_variables": 0,
+      "added_couplings": 240
+    },
+    "large_12": {
+      "qubits_b": 32,
+      "couplings_b": 16,
+      "qubits_bp": 32,
+      "couplings_bp": 256,
+      "added_variables": 0,
+      "added_couplings": 240
+    },
+    "large_13": {
+      "qubits_b": 30,
+      "couplings_b": 30,
+      "qubits_bp": 30,
+      "couplings_bp": 165,
+      "added_variables": 0,
+      "added_couplings": 135
+    },
+    "large_14": {
+      "qubits_b": 30,
+      "couplings_b": 30,
+      "qubits_bp": 30,
+      "couplings_bp": 165,
+      "added_variables": 0,
+      "added_couplings": 135
+    }
+  },
+  "solver_results": {
+    "small_0": {
+      "cpsat": {
+        "feasible": false,
+        "energy": 0.0,
+        "makespan": 0,
+        "runtime": 1.8585396218113601
+      },
+      "sa": {
+        "feasible": false,
+        "energy": 0.0,
+        "makespan": 0,
+        "runtime": 0.20531979110091925
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": 615.8957831062767,
+        "makespan": 0,
+        "runtime": 8.16181814018637
+      }
+    },
+    "small_1": {
+      "cpsat": {
+        "feasible": true,
+        "energy": -1455.83016,
+        "makespan": 13785820,
+        "runtime": 0.126818825956434
+      },
+      "sa": {
+        "feasible": true,
+        "energy": -1471.0205692175664,
+        "makespan": 13785869,
+        "runtime": 0.663238188251853
+      },
+      "qaoa": {
+        "feasible": true,
+        "energy": -714.9734563957122,
+        "makespan": 13762114,
+        "runtime": 0.6314291548915207
+      }
+    },
+    "small_2": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -931.66893,
+        "makespan": 0,
+        "runtime": 0.04180749133229256
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -1076.612121212121,
+        "makespan": 0,
+        "runtime": 0.6837273151613772
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -72.87263759071911,
+        "makespan": 0,
+        "runtime": 0.4159440388903022
+      }
+    },
+    "small_3": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -45.49773,
+        "makespan": 0,
+        "runtime": 0.010803656186908484
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -45.497727272727275,
+        "makespan": 0,
+        "runtime": 0.2994708400219679
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": 580.8856136422338,
+        "makespan": 0,
+        "runtime": 0.456119479611516
+      }
+    },
+    "small_4": {
+      "cpsat": {
+        "feasible": true,
+        "energy": -376.04221,
+        "makespan": 2180238,
+        "runtime": 0.025494528003036976
+      },
+      "sa": {
+        "feasible": true,
+        "energy": -379.8703361742424,
+        "makespan": 2178824,
+        "runtime": 0.6685144328512251
+      },
+      "qaoa": {
+        "feasible": true,
+        "energy": -127.40347555265284,
+        "makespan": 2222181,
+        "runtime": 0.19835342513397336
+      }
+    },
+    "small_5": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -1643.19924,
+        "makespan": 0,
+        "runtime": 0.04816108196973801
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -1831.9492424242426,
+        "makespan": 0,
+        "runtime": 0.6546840658411384
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -644.3656822035061,
+        "makespan": 0,
+        "runtime": 0.457069874741137
+      }
+    },
+    "small_6": {
+      "cpsat": {
+        "feasible": true,
+        "energy": -789.4771,
+        "makespan": 8165624,
+        "runtime": 0.02686828700825572
+      },
+      "sa": {
+        "feasible": true,
+        "energy": -798.2662109375001,
+        "makespan": 8165624,
+        "runtime": 0.677401568274945
+      },
+      "qaoa": {
+        "feasible": true,
+        "energy": -0.4573590265735046,
+        "makespan": 8165664,
+        "runtime": 0.4178654099814594
+      }
+    },
+    "small_7": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -464.69882,
+        "makespan": 0,
+        "runtime": 0.019742348697036505
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -516.2613214666194,
+        "makespan": 0,
+        "runtime": 0.610646037850529
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -88.3573257626958,
+        "makespan": 0,
+        "runtime": 0.4489318849518895
+      }
+    },
+    "small_8": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -828.67004,
+        "makespan": 0,
+        "runtime": 0.027396562043577433
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -912.0684747869317,
+        "makespan": 0,
+        "runtime": 0.6651023901067674
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -300.2149665270355,
+        "makespan": 0,
+        "runtime": 0.23468140605837107
+      }
+    },
+    "small_9": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -1465.72005,
+        "makespan": 0,
+        "runtime": 0.021157718263566494
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -1737.1263043027934,
+        "makespan": 0,
+        "runtime": 0.6843782928772271
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -548.5110978660642,
+        "makespan": 0,
+        "runtime": 0.47751781484112144
+      }
+    },
+    "small_10": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -1665.82676,
+        "makespan": 0,
+        "runtime": 0.02203712798655033
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -1726.2088445490058,
+        "makespan": 0,
+        "runtime": 0.6706342804245651
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -923.9194349380481,
+        "makespan": 0,
+        "runtime": 0.42656438797712326
+      }
+    },
+    "small_11": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -255.2984,
+        "makespan": 0,
+        "runtime": 0.018409076146781445
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -265.64995117187505,
+        "makespan": 0,
+        "runtime": 0.6390896276570857
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -67.93639878014069,
+        "makespan": 0,
+        "runtime": 0.4658023859374225
+      }
+    },
+    "small_12": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -4.83569,
+        "makespan": 0,
+        "runtime": 0.008174821268767118
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -4.835688920454545,
+        "makespan": 0,
+        "runtime": 0.2463467288762331
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": 525.0404473923954,
+        "makespan": 0,
+        "runtime": 0.424516336992383
+      }
+    },
+    "small_13": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -507.03391,
+        "makespan": 0,
+        "runtime": 0.025784878991544247
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -585.2068536931818,
+        "makespan": 0,
+        "runtime": 0.6049695829860866
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -110.37585699228936,
+        "makespan": 0,
+        "runtime": 0.29075094405561686
+      }
+    },
+    "small_14": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -1268.91031,
+        "makespan": 0,
+        "runtime": 0.026281824335455894
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -1346.410310132576,
+        "makespan": 0,
+        "runtime": 0.6680746972560883
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -460.1150172247848,
+        "makespan": 0,
+        "runtime": 0.42682243790477514
+      }
+    },
+    "medium_0": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -560.12728,
+        "makespan": 0,
+        "runtime": 0.6957602980546653
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -932.0833333333336,
+        "makespan": 0,
+        "runtime": 1.0540163149125874
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -63.26276901684139,
+        "makespan": 0,
+        "runtime": 1.8195437449030578
+      }
+    },
+    "medium_1": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -362.71247,
+        "makespan": 0,
+        "runtime": 0.19879454281181097
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -390.5249496922349,
+        "makespan": 0,
+        "runtime": 0.9618114540353417
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -355.65171109054654,
+        "makespan": 0,
+        "runtime": 0.5249698599800467
+      }
+    },
+    "medium_2": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -649.93985,
+        "makespan": 0,
+        "runtime": 0.6500538499094546
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -1052.2414062500002,
+        "makespan": 0,
+        "runtime": 1.1723545179702342
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -96.10248912104173,
+        "makespan": 0,
+        "runtime": 1.820416227914393
+      }
+    },
+    "medium_3": {
+      "cpsat": {
+        "feasible": true,
+        "energy": -278.08362,
+        "makespan": 57843,
+        "runtime": 0.08338782470673323
+      },
+      "sa": {
+        "feasible": true,
+        "energy": -280.58359375,
+        "makespan": 58516,
+        "runtime": 0.9548128233291209
+      },
+      "qaoa": {
+        "feasible": true,
+        "energy": -265.35143077513413,
+        "makespan": 53857,
+        "runtime": 0.705503772944212
+      }
+    },
+    "medium_4": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -1504.35157,
+        "makespan": 0,
+        "runtime": 0.06290565710514784
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -1614.3515625,
+        "makespan": 0,
+        "runtime": 0.9601551447995007
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -761.7361325699458,
+        "makespan": 0,
+        "runtime": 0.748237872030586
+      }
+    },
+    "medium_5": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -1635.46659,
+        "makespan": 0,
+        "runtime": 0.1918301247060299
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -1709.0811049952654,
+        "makespan": 0,
+        "runtime": 1.1112949238158762
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -576.0569869759883,
+        "makespan": 0,
+        "runtime": 1.7825329480692744
+      }
+    },
+    "medium_6": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -22.23791,
+        "makespan": 0,
+        "runtime": 0.02058110712096095
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -26.183214962121212,
+        "makespan": 0,
+        "runtime": 0.5321414680220187
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": 794.0081142380211,
+        "makespan": 0,
+        "runtime": 1.822030016221106
+      }
+    },
+    "medium_7": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -45.49773,
+        "makespan": 0,
+        "runtime": 0.03523522010073066
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -45.47727272727273,
+        "makespan": 0,
+        "runtime": 0.38002125499770045
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": 1202.409581267637,
+        "makespan": 0,
+        "runtime": 1.8191889179870486
+      }
+    },
+    "medium_8": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -150.43437,
+        "makespan": 0,
+        "runtime": 0.2313920557498932
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -225.59921874999995,
+        "makespan": 0,
+        "runtime": 0.6317016123794019
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": 850.4878380560428,
+        "makespan": 0,
+        "runtime": 0.7514569978229702
+      }
+    },
+    "medium_9": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -1892.27263,
+        "makespan": 0,
+        "runtime": 0.1550023490563035
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -2213.2821695963544,
+        "makespan": 0,
+        "runtime": 1.030538990162313
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -526.2066731165805,
+        "makespan": 0,
+        "runtime": 1.7930719540454447
+      }
+    },
+    "medium_10": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -23.0074,
+        "makespan": 0,
+        "runtime": 0.016736541409045458
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -24.276929450757578,
+        "makespan": 0,
+        "runtime": 0.4373991689644754
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": 853.4670309291188,
+        "makespan": 0,
+        "runtime": 1.8189821946434677
+      }
+    },
+    "medium_11": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -612.82408,
+        "makespan": 0,
+        "runtime": 0.1578548289835453
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -670.1925292968751,
+        "makespan": 0,
+        "runtime": 0.9578824462369084
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -226.21882723063504,
+        "makespan": 0,
+        "runtime": 0.7726289471611381
+      }
+    },
+    "medium_12": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -2592.88391,
+        "makespan": 0,
+        "runtime": 0.21603230107575655
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -2876.7462476325763,
+        "makespan": 0,
+        "runtime": 1.312615079805255
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -1067.4879059031716,
+        "makespan": 0,
+        "runtime": 1.817391112446785
+      }
+    },
+    "medium_13": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -1227.26674,
+        "makespan": 0,
+        "runtime": 0.18400773219764233
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -1375.547995827415,
+        "makespan": 0,
+        "runtime": 1.2481885948218405
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -319.39015191420776,
+        "makespan": 0,
+        "runtime": 1.0709372609853745
+      }
+    },
+    "medium_14": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -31.92744,
+        "makespan": 0,
+        "runtime": 0.1981986090540886
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -42.5100127249053,
+        "makespan": 0,
+        "runtime": 0.6242425888776779
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": 21.9641599132498,
+        "makespan": 0,
+        "runtime": 0.7138754278421402
+      }
+    },
+    "large_0": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -1465.53296,
+        "makespan": 0,
+        "runtime": 8.238977925851941
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -2302.131060606061,
+        "makespan": 0,
+        "runtime": 1.933921235613525
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -776.2190923696015,
+        "makespan": 0,
+        "runtime": 579.7572990758345
+      }
+    },
+    "large_1": {
+      "cpsat": {
+        "feasible": true,
+        "energy": -280.27112,
+        "makespan": 57843,
+        "runtime": 0.3256176761351526
+      },
+      "sa": {
+        "feasible": true,
+        "energy": -281.67734375,
+        "makespan": 53857,
+        "runtime": 1.2782433740794659
+      },
+      "qaoa": {
+        "feasible": true,
+        "energy": -179.98900400666128,
+        "makespan": 57885,
+        "runtime": 76.26208107033744
+      }
+    },
+    "large_2": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -1433.52968,
+        "makespan": 0,
+        "runtime": 1.4578436929732561
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -1786.276953125,
+        "makespan": 0,
+        "runtime": 2.004192931111902
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -301.643779670946,
+        "makespan": 0,
+        "runtime": 579.3999483669177
+      }
+    },
+    "large_3": {
+      "cpsat": {
+        "feasible": true,
+        "energy": -386.14996,
+        "makespan": 14589930,
+        "runtime": 0.33295388286933303
+      },
+      "sa": {
+        "feasible": true,
+        "energy": -402.2436996922349,
+        "makespan": 14589930,
+        "runtime": 1.2345972331240773
+      },
+      "qaoa": {
+        "feasible": true,
+        "energy": 121.5068531061746,
+        "makespan": 14587851,
+        "runtime": 45.58491367986426
+      }
+    },
+    "large_4": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -2404.83198,
+        "makespan": 0,
+        "runtime": 0.22336466796696186
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -2528.894477982955,
+        "makespan": 0,
+        "runtime": 1.2353444159962237
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": 802.4681081138257,
+        "makespan": 0,
+        "runtime": 96.31147287227213
+      }
+    },
+    "large_5": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -2564.88827,
+        "makespan": 0,
+        "runtime": 4.017544130329043
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -3342.4006414240057,
+        "makespan": 0,
+        "runtime": 2.1453472822904587
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -981.9792588842663,
+        "makespan": 0,
+        "runtime": 579.3866934529506
+      }
+    },
+    "large_6": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -2376.94843,
+        "makespan": 0,
+        "runtime": 0.3123928103595972
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -2575.10146484375,
+        "makespan": 0,
+        "runtime": 2.0234151110053062
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -965.3012741294646,
+        "makespan": 0,
+        "runtime": 579.4376536454074
+      }
+    },
+    "large_7": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -7.16978,
+        "makespan": 0,
+        "runtime": 0.0227978746406734
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -7.169779829545455,
+        "makespan": 0,
+        "runtime": 0.41372722666710615
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": 676.1897405216425,
+        "makespan": 0,
+        "runtime": 579.396616152022
+      }
+    },
+    "large_8": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -1143.9781,
+        "makespan": 0,
+        "runtime": 1.2882650820538402
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -1263.0406249999996,
+        "makespan": 0,
+        "runtime": 2.073801624123007
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -325.3784914158472,
+        "makespan": 0,
+        "runtime": 579.3487463695928
+      }
+    },
+    "large_9": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -795.12929,
+        "makespan": 0,
+        "runtime": 5.637108776252717
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -1249.1867187500002,
+        "makespan": 0,
+        "runtime": 1.873531128745526
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": 186.5796504692484,
+        "makespan": 0,
+        "runtime": 584.8672543759458
+      }
+    },
+    "large_10": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -2107.36587,
+        "makespan": 0,
+        "runtime": 0.6493481593206525
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -2258.5271950461643,
+        "makespan": 0,
+        "runtime": 1.1963248802348971
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": 1314.556135344805,
+        "makespan": 0,
+        "runtime": 61.60207043774426
+      }
+    },
+    "large_11": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -3135.9034,
+        "makespan": 0,
+        "runtime": 0.4828060073778033
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -3513.991666666667,
+        "makespan": 0,
+        "runtime": 1.9717728369869292
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -1154.304896961677,
+        "makespan": 0,
+        "runtime": 262.54299598000944
+      }
+    },
+    "large_12": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -3068.02726,
+        "makespan": 0,
+        "runtime": 0.3013213239610195
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -3128.9806581439398,
+        "makespan": 0,
+        "runtime": 2.1444205483421683
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": -1418.4131458112374,
+        "makespan": 0,
+        "runtime": 579.4028382352553
+      }
+    },
+    "large_13": {
+      "cpsat": {
+        "feasible": true,
+        "energy": -946.51563,
+        "makespan": 5200917,
+        "runtime": 0.13523810589686036
+      },
+      "sa": {
+        "feasible": true,
+        "energy": -951.5156250000002,
+        "makespan": 5193578,
+        "runtime": 1.284040133934468
+      },
+      "qaoa": {
+        "feasible": true,
+        "energy": 600.7979281888634,
+        "makespan": 5401772,
+        "runtime": 96.30687384540215
+      }
+    },
+    "large_14": {
+      "cpsat": {
+        "feasible": false,
+        "energy": -2312.11535,
+        "makespan": 0,
+        "runtime": 0.3526050946675241
+      },
+      "sa": {
+        "feasible": false,
+        "energy": -2427.603633996212,
+        "makespan": 0,
+        "runtime": 1.2811770169064403
+      },
+      "qaoa": {
+        "feasible": false,
+        "energy": 902.5903280458806,
+        "makespan": 0,
+        "runtime": 28.374771003611386
+      }
+    }
+  }
+}

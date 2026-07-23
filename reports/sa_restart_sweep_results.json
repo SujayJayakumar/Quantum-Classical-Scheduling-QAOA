@@ -1,0 +1,540 @@
+{
+  "1": {
+    "solved_count": 2,
+    "feasibility_rate": 0.13333333333333333,
+    "total_evals": 15000,
+    "total_runtime": 0.14311098837992176,
+    "solved_set": [
+      "medium_3",
+      "large_1"
+    ],
+    "jaccard_similarity": 0.5,
+    "window_details": {
+      "small_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.005382846010033973
+      },
+      "small_12": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.005357094229984796
+      },
+      "small_3": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.005381940049992409
+      },
+      "small_6": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.005364927189948503
+      },
+      "small_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.005352293440009817
+      },
+      "medium_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.010212287719987216
+      },
+      "medium_1": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.007582029660043191
+      },
+      "medium_3": {
+        "solved": "YES",
+        "feasible_count": 1,
+        "runtime_est": 0.007565104230016004
+      },
+      "medium_6": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.01020316248999734
+      },
+      "medium_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.01033678999003314
+      },
+      "large_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.016847710799993365
+      },
+      "large_1": {
+        "solved": "YES",
+        "feasible_count": 1,
+        "runtime_est": 0.009864809459977551
+      },
+      "large_3": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.009868260969960829
+      },
+      "large_6": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.016868542789961794
+      },
+      "large_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.01692318934998184
+      }
+    }
+  },
+  "5": {
+    "solved_count": 4,
+    "feasibility_rate": 0.26666666666666666,
+    "total_evals": 75000,
+    "total_runtime": 0.715554941899609,
+    "solved_set": [
+      "medium_3",
+      "large_1",
+      "small_6",
+      "large_3"
+    ],
+    "jaccard_similarity": 1.0,
+    "window_details": {
+      "small_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.026914230050169866
+      },
+      "small_12": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.02678547114992398
+      },
+      "small_3": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.026909700249962046
+      },
+      "small_6": {
+        "solved": "YES",
+        "feasible_count": 3,
+        "runtime_est": 0.026824635949742517
+      },
+      "small_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.026761467200049086
+      },
+      "medium_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.05106143859993609
+      },
+      "medium_1": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.037910148300215954
+      },
+      "medium_3": {
+        "solved": "YES",
+        "feasible_count": 5,
+        "runtime_est": 0.037825521150080026
+      },
+      "medium_6": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.0510158124499867
+      },
+      "medium_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.0516839499501657
+      },
+      "large_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.08423855399996683
+      },
+      "large_1": {
+        "solved": "YES",
+        "feasible_count": 5,
+        "runtime_est": 0.049324047299887756
+      },
+      "large_3": {
+        "solved": "YES",
+        "feasible_count": 1,
+        "runtime_est": 0.049341304849804146
+      },
+      "large_6": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.08434271394980897
+      },
+      "large_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.0846159467499092
+      }
+    }
+  },
+  "10": {
+    "solved_count": 4,
+    "feasibility_rate": 0.26666666666666666,
+    "total_evals": 150000,
+    "total_runtime": 1.431109883799218,
+    "solved_set": [
+      "medium_3",
+      "large_1",
+      "small_6",
+      "large_3"
+    ],
+    "jaccard_similarity": 1.0,
+    "window_details": {
+      "small_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.05382846010033973
+      },
+      "small_12": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.05357094229984796
+      },
+      "small_3": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.05381940049992409
+      },
+      "small_6": {
+        "solved": "YES",
+        "feasible_count": 4,
+        "runtime_est": 0.05364927189948503
+      },
+      "small_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.05352293440009817
+      },
+      "medium_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.10212287719987218
+      },
+      "medium_1": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.07582029660043191
+      },
+      "medium_3": {
+        "solved": "YES",
+        "feasible_count": 10,
+        "runtime_est": 0.07565104230016005
+      },
+      "medium_6": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.1020316248999734
+      },
+      "medium_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.1033678999003314
+      },
+      "large_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.16847710799993365
+      },
+      "large_1": {
+        "solved": "YES",
+        "feasible_count": 10,
+        "runtime_est": 0.09864809459977551
+      },
+      "large_3": {
+        "solved": "YES",
+        "feasible_count": 4,
+        "runtime_est": 0.09868260969960829
+      },
+      "large_6": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.16868542789961793
+      },
+      "large_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.1692318934998184
+      }
+    }
+  },
+  "25": {
+    "solved_count": 4,
+    "feasibility_rate": 0.26666666666666666,
+    "total_evals": 375000,
+    "total_runtime": 3.577774709498044,
+    "solved_set": [
+      "medium_3",
+      "large_1",
+      "small_6",
+      "large_3"
+    ],
+    "jaccard_similarity": 1.0,
+    "window_details": {
+      "small_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.13457115025084931
+      },
+      "small_12": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.1339273557496199
+      },
+      "small_3": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.13454850124981022
+      },
+      "small_6": {
+        "solved": "YES",
+        "feasible_count": 12,
+        "runtime_est": 0.13412317974871257
+      },
+      "small_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.1338073360002454
+      },
+      "medium_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.2553071929996804
+      },
+      "medium_1": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.18955074150107976
+      },
+      "medium_3": {
+        "solved": "YES",
+        "feasible_count": 25,
+        "runtime_est": 0.1891276057504001
+      },
+      "medium_6": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.2550790622499335
+      },
+      "medium_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.2584197497508285
+      },
+      "large_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.4211927699998341
+      },
+      "large_1": {
+        "solved": "YES",
+        "feasible_count": 25,
+        "runtime_est": 0.24662023649943876
+      },
+      "large_3": {
+        "solved": "YES",
+        "feasible_count": 10,
+        "runtime_est": 0.24670652424902073
+      },
+      "large_6": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.42171356974904484
+      },
+      "large_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.423079733749546
+      }
+    }
+  },
+  "50": {
+    "solved_count": 4,
+    "feasibility_rate": 0.26666666666666666,
+    "total_evals": 750000,
+    "total_runtime": 7.155549418996088,
+    "solved_set": [
+      "medium_3",
+      "large_1",
+      "small_6",
+      "large_3"
+    ],
+    "jaccard_similarity": 1.0,
+    "window_details": {
+      "small_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.26914230050169863
+      },
+      "small_12": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.2678547114992398
+      },
+      "small_3": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.26909700249962043
+      },
+      "small_6": {
+        "solved": "YES",
+        "feasible_count": 28,
+        "runtime_est": 0.26824635949742515
+      },
+      "small_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.2676146720004908
+      },
+      "medium_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.5106143859993608
+      },
+      "medium_1": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.3791014830021595
+      },
+      "medium_3": {
+        "solved": "YES",
+        "feasible_count": 50,
+        "runtime_est": 0.3782552115008002
+      },
+      "medium_6": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.510158124499867
+      },
+      "medium_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.516839499501657
+      },
+      "large_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.8423855399996683
+      },
+      "large_1": {
+        "solved": "YES",
+        "feasible_count": 50,
+        "runtime_est": 0.4932404729988775
+      },
+      "large_3": {
+        "solved": "YES",
+        "feasible_count": 20,
+        "runtime_est": 0.49341304849804146
+      },
+      "large_6": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.8434271394980897
+      },
+      "large_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.846159467499092
+      }
+    }
+  },
+  "100": {
+    "solved_count": 4,
+    "feasibility_rate": 0.26666666666666666,
+    "total_evals": 1500000,
+    "total_runtime": 14.311098837992176,
+    "solved_set": [
+      "medium_3",
+      "large_1",
+      "small_6",
+      "large_3"
+    ],
+    "jaccard_similarity": 1.0,
+    "window_details": {
+      "small_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.5382846010033973
+      },
+      "small_12": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.5357094229984796
+      },
+      "small_3": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.5381940049992409
+      },
+      "small_6": {
+        "solved": "YES",
+        "feasible_count": 56,
+        "runtime_est": 0.5364927189948503
+      },
+      "small_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.5352293440009817
+      },
+      "medium_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 1.0212287719987216
+      },
+      "medium_1": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 0.758202966004319
+      },
+      "medium_3": {
+        "solved": "YES",
+        "feasible_count": 100,
+        "runtime_est": 0.7565104230016004
+      },
+      "medium_6": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 1.020316248999734
+      },
+      "medium_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 1.033678999003314
+      },
+      "large_0": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 1.6847710799993365
+      },
+      "large_1": {
+        "solved": "YES",
+        "feasible_count": 100,
+        "runtime_est": 0.986480945997755
+      },
+      "large_3": {
+        "solved": "YES",
+        "feasible_count": 41,
+        "runtime_est": 0.9868260969960829
+      },
+      "large_6": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 1.6868542789961793
+      },
+      "large_9": {
+        "solved": "NO",
+        "feasible_count": 0,
+        "runtime_est": 1.692318934998184
+      }
+    }
+  }
+}
