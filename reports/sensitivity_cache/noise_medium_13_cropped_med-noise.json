@@ -1,0 +1,11 @@
+{
+  "label": "medium_13_cropped",
+  "qubits": 10,
+  "noise_level": "med-noise",
+  "error_rate": 0.01,
+  "feasible": false,
+  "energy": -175.31310887192234,
+  "energy_gap": 456.39541385535034,
+  "makespan": 5011607,
+  "overlap": 20.0
+}

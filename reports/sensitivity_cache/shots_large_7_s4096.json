@@ -1,0 +1,11 @@
+{
+  "label": "large_7",
+  "qubits": 32,
+  "p": 1,
+  "shots": 4096,
+  "feasible": false,
+  "energy": -216.39015151515156,
+  "energy_gap": 7.750757575757575,
+  "makespan": 13522088,
+  "runtime": 133.04114247485995
+}
