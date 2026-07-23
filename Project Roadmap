@@ -1,0 +1,431 @@
+Overall Roadmap
+
+Think of the project as 7 milestones.
+
+M1: Understand scheduler trace data
+M2: Create scheduling problem instance
+M3: Build QUBO formulation
+M4: Validate with classical solvers
+M5: Replace solver with QAOA
+M6: Scale on A100
+M7: Benchmark and paper results
+
+Do them in order.
+
+M1 — Understand Your HPC Job Data
+
+This is your immediate next task.
+
+You mentioned:
+
+i do have a file having the jobs submitted and their requirements
+
+Perfect.
+
+Before any coding, answer:
+
+What fields exist?
+
+Ideally:
+
+Job ID
+Submit Time
+Start Time
+End Time
+Runtime
+Queue
+Priority
+Node Count
+CPU Count
+GPU Count
+Memory
+User
+Status
+
+Maybe more.
+
+Goal of M1
+
+Determine:
+
+What can become constraints?
+
+Example:
+
+GPU Count
+
+↓
+
+GPU eligibility constraint.
+
+Priority
+
+↓
+
+Priority penalty.
+
+Node Count
+
+↓
+
+Capacity constraint.
+
+Runtime
+
+↓
+
+Execution cost.
+
+The trace determines the project.
+
+Not vice versa.
+
+Deliverable for M1
+
+Create a table:
+
+Field	Present?	Use in QUBO?
+Job ID	Yes	No
+Runtime	Yes	Yes
+GPU Count	Yes	Yes
+Priority	Yes	Maybe
+Memory	Yes	Maybe
+
+Only after this do we design variables.
+
+M2 — Create a Conflict Window
+
+This is critical.
+
+We are NOT optimizing months of scheduler history.
+
+We want:
+
+One scheduling decision point
+
+Example:
+
+At:
+
+10:15 AM
+
+Queue contains:
+
+Job1
+Job2
+Job3
+Job4
+Job5
+
+Resources:
+
+Node1
+Node2
+Node3
+
+Now optimization becomes:
+
+Which jobs go to which nodes?
+
+This is the QUBO instance.
+
+Deliverable for M2
+
+Build dataset:
+
+{
+  "jobs": [...],
+  "nodes": [...]
+}
+
+Small.
+
+Maybe:
+
+4–8 jobs
+2–4 nodes
+
+Initially.
+
+M3 — Implement the Paper's QUBO
+
+This is where coding starts.
+
+Use the paper's exact mapping formulation.
+
+Variables
+
+For every:
+
+Job i
+Node j
+
+create:
+
+xij
+
+Binary.
+
+Example:
+
+4 jobs
+
+2 nodes
+
+↓
+
+8 variables
+
+↓
+
+8 qubits later.
+
+Objective
+
+Initially:
+
+Execution cost only.
+
+∑e
+ij
+	​
+
+x
+ij
+	​
+
+Constraints
+
+Only:
+
+Assignment
+
+Job assigned exactly once.
+
+Capacity
+
+Node capacity.
+
+GPU compatibility
+
+GPU job can't go to CPU node.
+
+STOP there.
+
+Do NOT add:
+
+communication
+precedence
+time slots
+energy
+
+yet.
+
+M4 — Validate QUBO Classically
+
+Most important milestone.
+
+Before QAOA.
+
+Use:
+
+dimod
+neal
+
+or
+
+ortools
+
+Compare:
+
+Classical optimum
+
+vs
+
+QUBO optimum
+
+Question:
+
+Do they produce same mapping?
+
+If yes:
+
+QUBO is correct.
+
+If no:
+
+Fix QUBO.
+
+M5 — Introduce QAOA
+
+Only now.
+
+Use:
+
+Option A
+
+Qiskit
+
+Best for learning.
+
+Option B
+
+CUDA-Q
+
+Best for project.
+
+Personally:
+
+Start with Qiskit.
+
+Then move to CUDA-Q.
+
+First QAOA target
+
+Tiny.
+
+4 jobs
+2 nodes
+
+8 qubits.
+
+Then:
+
+6 jobs
+3 nodes
+
+18 qubits.
+
+Then:
+
+8 jobs
+4 nodes
+
+32 variables.
+
+May require encoding tricks.
+
+M6 — Add Real Scheduler Replay
+
+Now we become publication-worthy.
+
+Take real trace.
+
+Identify:
+
+Conflict windows
+
+Example:
+
+Queue backlog.
+
+Extract:
+
+Jobs
+Nodes
+Resources
+
+Run:
+
+Historical
+
+vs
+
+HEFT
+
+vs
+
+CP-SAT
+
+vs
+
+QAOA
+
+Now you have experiments.
+
+M7 — A100 Scaling
+
+Only after everything above works.
+
+Move:
+
+QAOA simulator
+
+to:
+
+CUDA-Q
+
+Measure:
+
+Runtime
+Memory
+Solution quality
+
+Try:
+
+10 qubits
+15 qubits
+20 qubits
+25 qubits
+
+Find practical limit.
+
+How ChatGPT/Codex Should Be Used
+
+Do NOT ask:
+
+"Build the entire project."
+
+Bad idea.
+
+Instead:
+
+Prompt 1
+Create Python dataclasses for HPC jobs and nodes.
+Prompt 2
+Implement assignment and capacity constraints in a QUBO builder.
+Prompt 3
+Implement QUBO solver using dimod/neal.
+Prompt 4
+Convert QUBO matrix into QAOA Hamiltonian using CUDA-Q.
+
+One component at a time.
+
+What You Should Do Next
+
+Immediately:
+
+Step 1
+
+Upload or inspect the scheduler job file.
+
+Step 2
+
+List every available column.
+
+Step 3
+
+Identify:
+
+resource constraints
+priorities
+runtimes
+node requirements
+Step 4
+
+Build one conflict window:
+
+4–8 jobs
+2–4 nodes
+
+Only after that should a single line of optimization code be written.
+
+Because the real project is not:
+
+"running QAOA"
+
+The real project is:
+
+"converting actual HPC scheduling decisions into a valid QUBO optimization problem that QAOA can solve."
+
+And the job trace file is where that process begins.
