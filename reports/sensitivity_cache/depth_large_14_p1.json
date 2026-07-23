@@ -1,0 +1,15 @@
+{
+  "bucket": "large",
+  "label": "large_14",
+  "qubits": 30,
+  "p": 1,
+  "feasible": false,
+  "energy": -1668.2852272727268,
+  "energy_gap": 474.7962121212122,
+  "makespan": 12733862,
+  "overlap": 60.0,
+  "iterations": 53,
+  "runtime": 13.32369697582908,
+  "cpsat_makespan": 12840018,
+  "cpsat_feasible": false
+}
