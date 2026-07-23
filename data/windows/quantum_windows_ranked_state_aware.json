@@ -1,0 +1,193 @@
+{
+  "windows": [
+    {
+      "available_cpu_count": 115,
+      "available_gpu_count": 3,
+      "busy_count": 312,
+      "candidate_nodes": 1,
+      "classification": "LARGE",
+      "contention_type": "mixed",
+      "cpu_pressure_ratio": 10.6640625,
+      "gpu_pressure_ratio": 16.5,
+      "job_density": 30.0,
+      "jobs": 30,
+      "label": "gpu_30",
+      "node_ids": [
+        "r04gn05"
+      ],
+      "offline_count": 0,
+      "qubits": 30,
+      "rank": "HIGH",
+      "resource_competition_score": 842.0859375,
+      "window_start": "2025-08-15 00:35:10+05:30"
+    },
+    {
+      "available_cpu_count": 116,
+      "available_gpu_count": 3,
+      "busy_count": 312,
+      "candidate_nodes": 1,
+      "classification": "LARGE",
+      "contention_type": "cpu",
+      "cpu_pressure_ratio": 11.84375,
+      "gpu_pressure_ratio": 0,
+      "job_density": 30.0,
+      "jobs": 30,
+      "label": "cpu_30",
+      "node_ids": [
+        "r01cn02"
+      ],
+      "offline_count": 0,
+      "qubits": 30,
+      "rank": "HIGH",
+      "resource_competition_score": 367.15625,
+      "window_start": "2025-08-15 00:26:22+05:30"
+    },
+    {
+      "available_cpu_count": 116,
+      "available_gpu_count": 3,
+      "busy_count": 312,
+      "candidate_nodes": 1,
+      "classification": "LARGE",
+      "contention_type": "mixed",
+      "cpu_pressure_ratio": 7.2265625,
+      "gpu_pressure_ratio": 4.25,
+      "job_density": 30.0,
+      "jobs": 30,
+      "label": "mixed_30",
+      "node_ids": [
+        "r04gn05"
+      ],
+      "offline_count": 0,
+      "qubits": 30,
+      "rank": "HIGH",
+      "resource_competition_score": 355.7734375,
+      "window_start": "2025-08-15 00:26:22+05:30"
+    },
+    {
+      "available_cpu_count": 115,
+      "available_gpu_count": 3,
+      "busy_count": 312,
+      "candidate_nodes": 1,
+      "classification": "MEDIUM",
+      "contention_type": "mixed",
+      "cpu_pressure_ratio": 2.6015625,
+      "gpu_pressure_ratio": 8.0,
+      "job_density": 20.0,
+      "jobs": 20,
+      "label": "gpu_20",
+      "node_ids": [
+        "r04gn05"
+      ],
+      "offline_count": 0,
+      "qubits": 20,
+      "rank": "HIGH",
+      "resource_competition_score": 222.6328125,
+      "window_start": "2025-08-15 00:35:10+05:30"
+    },
+    {
+      "available_cpu_count": 116,
+      "available_gpu_count": 3,
+      "busy_count": 312,
+      "candidate_nodes": 1,
+      "classification": "MEDIUM",
+      "contention_type": "mixed",
+      "cpu_pressure_ratio": 5.6171875,
+      "gpu_pressure_ratio": 3.5,
+      "job_density": 20.0,
+      "jobs": 20,
+      "label": "mixed_20",
+      "node_ids": [
+        "r04gn05"
+      ],
+      "offline_count": 0,
+      "qubits": 20,
+      "rank": "HIGH",
+      "resource_competition_score": 191.4609375,
+      "window_start": "2025-08-15 00:26:22+05:30"
+    },
+    {
+      "available_cpu_count": 116,
+      "available_gpu_count": 3,
+      "busy_count": 312,
+      "candidate_nodes": 1,
+      "classification": "MEDIUM",
+      "contention_type": "cpu",
+      "cpu_pressure_ratio": 5.4375,
+      "gpu_pressure_ratio": 0,
+      "job_density": 20.0,
+      "jobs": 20,
+      "label": "cpu_20",
+      "node_ids": [
+        "r01cn02"
+      ],
+      "offline_count": 0,
+      "qubits": 20,
+      "rank": "HIGH",
+      "resource_competition_score": 114.1875,
+      "window_start": "2025-08-15 00:26:22+05:30"
+    },
+    {
+      "available_cpu_count": 115,
+      "available_gpu_count": 3,
+      "busy_count": 312,
+      "candidate_nodes": 1,
+      "classification": "SMALL",
+      "contention_type": "mixed",
+      "cpu_pressure_ratio": 1.3203125,
+      "gpu_pressure_ratio": 4.75,
+      "job_density": 10.0,
+      "jobs": 10,
+      "label": "gpu_10",
+      "node_ids": [
+        "r04gn05"
+      ],
+      "offline_count": 0,
+      "qubits": 10,
+      "rank": "HIGH",
+      "resource_competition_score": 66.7734375,
+      "window_start": "2025-08-15 00:35:10+05:30"
+    },
+    {
+      "available_cpu_count": 116,
+      "available_gpu_count": 3,
+      "busy_count": 312,
+      "candidate_nodes": 1,
+      "classification": "SMALL",
+      "contention_type": "mixed",
+      "cpu_pressure_ratio": 1.6171875,
+      "gpu_pressure_ratio": 2.25,
+      "job_density": 10.0,
+      "jobs": 10,
+      "label": "mixed_10",
+      "node_ids": [
+        "r04gn05"
+      ],
+      "offline_count": 0,
+      "qubits": 10,
+      "rank": "HIGH",
+      "resource_competition_score": 42.5390625,
+      "window_start": "2025-08-15 00:26:22+05:30"
+    },
+    {
+      "available_cpu_count": 116,
+      "available_gpu_count": 3,
+      "busy_count": 312,
+      "candidate_nodes": 1,
+      "classification": "SMALL",
+      "contention_type": "local",
+      "cpu_pressure_ratio": 0.8125,
+      "gpu_pressure_ratio": 0,
+      "job_density": 10.0,
+      "jobs": 10,
+      "label": "cpu_10",
+      "node_ids": [
+        "r01cn02"
+      ],
+      "offline_count": 0,
+      "qubits": 10,
+      "rank": "HIGH",
+      "resource_competition_score": 8.9375,
+      "window_start": "2025-08-15 00:26:22+05:30"
+    }
+  ]
+}

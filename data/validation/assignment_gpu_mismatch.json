@@ -1,0 +1,18 @@
+{
+  "assignment_violations": 0,
+  "cpu_violations": 0,
+  "details": [
+    {
+      "capacity": 0,
+      "jobs": [
+        "j0"
+      ],
+      "message": "Assigned GPU demand exceeds node GPU capacity.",
+      "node_id": "n0",
+      "type": "gpu_capacity_violation",
+      "used": 1
+    }
+  ],
+  "gpu_violations": 1,
+  "valid": false
+}

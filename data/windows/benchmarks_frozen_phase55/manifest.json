@@ -1,0 +1,19 @@
+{
+  "cluster": {
+    "cpu_capacity": 128,
+    "cpu_nodes": 410,
+    "gpu_capacity": 4,
+    "gpu_nodes": 12
+  },
+  "outputs": [
+    "data/windows/benchmarks_frozen_phase55/cpu-only_10.json",
+    "data/windows/benchmarks_frozen_phase55/cpu-only_20.json",
+    "data/windows/benchmarks_frozen_phase55/cpu-only_30.json",
+    "data/windows/benchmarks_frozen_phase55/gpu-only_10.json",
+    "data/windows/benchmarks_frozen_phase55/gpu-only_20.json",
+    "data/windows/benchmarks_frozen_phase55/mixed_10.json",
+    "data/windows/benchmarks_frozen_phase55/mixed_20.json",
+    "data/windows/benchmarks_frozen_phase55/mixed_30.json"
+  ],
+  "source": "/home/sim/Desktop/Quantum/data/windows/frozen_source_120.json"
+}

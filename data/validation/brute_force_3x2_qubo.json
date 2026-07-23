@@ -1,0 +1,390 @@
+{
+  "best_energy_feasible_solution": {
+    "assignment": {
+      "j0": "n0",
+      "j1": "n0",
+      "j2": "n0"
+    },
+    "bits": "101010",
+    "objective": 19,
+    "qubo_energy": -26.2,
+    "valid": true,
+    "validation": {
+      "assignment_violations": 0,
+      "cpu_violations": 0,
+      "details": [],
+      "gpu_violations": 0,
+      "valid": true
+    }
+  },
+  "best_energy_solution": {
+    "assignment": {
+      "j0": "n0",
+      "j1": "n0",
+      "j2": "n0"
+    },
+    "bits": "101010",
+    "objective": 19,
+    "qubo_energy": -26.2,
+    "valid": true,
+    "validation": {
+      "assignment_violations": 0,
+      "cpu_violations": 0,
+      "details": [],
+      "gpu_violations": 0,
+      "valid": true
+    }
+  },
+  "best_feasible_solution": {
+    "assignment": {
+      "j0": "n0",
+      "j1": "n0",
+      "j2": "n1"
+    },
+    "bits": "101001",
+    "objective": 10,
+    "qubo_energy": -23.5,
+    "valid": true,
+    "validation": {
+      "assignment_violations": 0,
+      "cpu_violations": 0,
+      "details": [],
+      "gpu_violations": 0,
+      "valid": true
+    }
+  },
+  "best_objective_solution": {
+    "assignment": {
+      "j0": "n0",
+      "j1": "n0",
+      "j2": "n1"
+    },
+    "bits": "101001",
+    "objective": 10,
+    "qubo_energy": -23.5,
+    "valid": true,
+    "validation": {
+      "assignment_violations": 0,
+      "cpu_violations": 0,
+      "details": [],
+      "gpu_violations": 0,
+      "valid": true
+    }
+  },
+  "cp_sat": {
+    "assignments": {
+      "j0": "n0",
+      "j1": "n0",
+      "j2": "n0"
+    },
+    "decoded_makespan_seconds": 19,
+    "job_count": 3,
+    "mapping_objective_total_cost": 3.8,
+    "node_count": 2,
+    "optimal": true,
+    "status": "OPTIMAL"
+  },
+  "enumeration_count": 8,
+  "problem": {
+    "job_count": 3,
+    "jobs": [
+      {
+        "cpu_req": 1,
+        "estimated_runtime_seconds": 7,
+        "gpu_req": 0,
+        "job_id": "j0",
+        "node_req": 1
+      },
+      {
+        "cpu_req": 2,
+        "estimated_runtime_seconds": 3,
+        "gpu_req": 1,
+        "job_id": "j1",
+        "node_req": 1
+      },
+      {
+        "cpu_req": 1,
+        "estimated_runtime_seconds": 9,
+        "gpu_req": 0,
+        "job_id": "j2",
+        "node_req": 1
+      }
+    ],
+    "node_count": 2,
+    "nodes": [
+      {
+        "cpu_capacity": 4,
+        "gpu_capacity": 1,
+        "node_id": "n0"
+      },
+      {
+        "cpu_capacity": 2,
+        "gpu_capacity": 0,
+        "node_id": "n1"
+      }
+    ],
+    "qubo_metadata": {
+      "alpha_assign": 10.0,
+      "alpha_capacity": 0.0,
+      "assignment_term_count": 9,
+      "capacity_term_count": 12,
+      "excluded_terms": [
+        "communication_penalty",
+        "dependency_penalty",
+        "feature_compatibility_penalty",
+        "multi_node_jobs"
+      ],
+      "formulation": "mapping_only_qubo_v1",
+      "included_terms": [
+        "objective_runtime_cost",
+        "assignment_uniqueness",
+        "capacity_penalty"
+      ],
+      "job_count": 3,
+      "matrix_dimensions": [
+        6,
+        6
+      ],
+      "node_count": 2,
+      "objective_scale": 1.0,
+      "objective_term_count": 6,
+      "reference_alignment": "paper_style_task_node_mapping",
+      "variable_count": 6
+    },
+    "variable_count": 6
+  },
+  "rows": [
+    {
+      "assignment": {
+        "j0": "n0",
+        "j1": "n0",
+        "j2": "n1"
+      },
+      "bits": "101001",
+      "objective": 10,
+      "qubo_energy": -23.5,
+      "valid": true,
+      "validation": {
+        "assignment_violations": 0,
+        "cpu_violations": 0,
+        "details": [],
+        "gpu_violations": 0,
+        "valid": true
+      }
+    },
+    {
+      "assignment": {
+        "j0": "n1",
+        "j1": "n1",
+        "j2": "n0"
+      },
+      "bits": "010110",
+      "objective": 10,
+      "qubo_energy": -23.2,
+      "valid": false,
+      "validation": {
+        "assignment_violations": 0,
+        "cpu_violations": 1,
+        "details": [
+          {
+            "capacity": 2,
+            "jobs": [
+              "j0",
+              "j1"
+            ],
+            "message": "Assigned CPU demand exceeds node CPU capacity.",
+            "node_id": "n1",
+            "type": "cpu_capacity_violation",
+            "used": 3
+          },
+          {
+            "capacity": 0,
+            "jobs": [
+              "j0",
+              "j1"
+            ],
+            "message": "Assigned GPU demand exceeds node GPU capacity.",
+            "node_id": "n1",
+            "type": "gpu_capacity_violation",
+            "used": 1
+          }
+        ],
+        "gpu_violations": 1,
+        "valid": false
+      }
+    },
+    {
+      "assignment": {
+        "j0": "n1",
+        "j1": "n0",
+        "j2": "n0"
+      },
+      "bits": "011010",
+      "objective": 12,
+      "qubo_energy": -24.1,
+      "valid": true,
+      "validation": {
+        "assignment_violations": 0,
+        "cpu_violations": 0,
+        "details": [],
+        "gpu_violations": 0,
+        "valid": true
+      }
+    },
+    {
+      "assignment": {
+        "j0": "n0",
+        "j1": "n1",
+        "j2": "n1"
+      },
+      "bits": "100101",
+      "objective": 12,
+      "qubo_energy": -22.6,
+      "valid": false,
+      "validation": {
+        "assignment_violations": 0,
+        "cpu_violations": 1,
+        "details": [
+          {
+            "capacity": 2,
+            "jobs": [
+              "j1",
+              "j2"
+            ],
+            "message": "Assigned CPU demand exceeds node CPU capacity.",
+            "node_id": "n1",
+            "type": "cpu_capacity_violation",
+            "used": 3
+          },
+          {
+            "capacity": 0,
+            "jobs": [
+              "j1",
+              "j2"
+            ],
+            "message": "Assigned GPU demand exceeds node GPU capacity.",
+            "node_id": "n1",
+            "type": "gpu_capacity_violation",
+            "used": 1
+          }
+        ],
+        "gpu_violations": 1,
+        "valid": false
+      }
+    },
+    {
+      "assignment": {
+        "j0": "n1",
+        "j1": "n0",
+        "j2": "n1"
+      },
+      "bits": "011001",
+      "objective": 16,
+      "qubo_energy": -21.4,
+      "valid": true,
+      "validation": {
+        "assignment_violations": 0,
+        "cpu_violations": 0,
+        "details": [],
+        "gpu_violations": 0,
+        "valid": true
+      }
+    },
+    {
+      "assignment": {
+        "j0": "n0",
+        "j1": "n1",
+        "j2": "n0"
+      },
+      "bits": "100110",
+      "objective": 16,
+      "qubo_energy": -25.3,
+      "valid": false,
+      "validation": {
+        "assignment_violations": 0,
+        "cpu_violations": 0,
+        "details": [
+          {
+            "capacity": 0,
+            "jobs": [
+              "j1"
+            ],
+            "message": "Assigned GPU demand exceeds node GPU capacity.",
+            "node_id": "n1",
+            "type": "gpu_capacity_violation",
+            "used": 1
+          }
+        ],
+        "gpu_violations": 1,
+        "valid": false
+      }
+    },
+    {
+      "assignment": {
+        "j0": "n0",
+        "j1": "n0",
+        "j2": "n0"
+      },
+      "bits": "101010",
+      "objective": 19,
+      "qubo_energy": -26.2,
+      "valid": true,
+      "validation": {
+        "assignment_violations": 0,
+        "cpu_violations": 0,
+        "details": [],
+        "gpu_violations": 0,
+        "valid": true
+      }
+    },
+    {
+      "assignment": {
+        "j0": "n1",
+        "j1": "n1",
+        "j2": "n1"
+      },
+      "bits": "010101",
+      "objective": 19,
+      "qubo_energy": -20.5,
+      "valid": false,
+      "validation": {
+        "assignment_violations": 0,
+        "cpu_violations": 1,
+        "details": [
+          {
+            "capacity": 2,
+            "jobs": [
+              "j0",
+              "j1",
+              "j2"
+            ],
+            "message": "Assigned CPU demand exceeds node CPU capacity.",
+            "node_id": "n1",
+            "type": "cpu_capacity_violation",
+            "used": 4
+          },
+          {
+            "capacity": 0,
+            "jobs": [
+              "j0",
+              "j1",
+              "j2"
+            ],
+            "message": "Assigned GPU demand exceeds node GPU capacity.",
+            "node_id": "n1",
+            "type": "gpu_capacity_violation",
+            "used": 1
+          }
+        ],
+        "gpu_violations": 1,
+        "valid": false
+      }
+    }
+  ],
+  "verification": {
+    "best_energy_feasible_matches_cp_sat": true,
+    "cp_sat_is_feasible": true,
+    "enumerated_feasible_count": 4,
+    "three_way_match": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "assignment_violations": 0,
+  "cpu_violations": 1,
+  "details": [
+    {
+      "capacity": 4,
+      "jobs": [
+        "j0",
+        "j1"
+      ],
+      "message": "Assigned CPU demand exceeds node CPU capacity.",
+      "node_id": "n0",
+      "type": "cpu_capacity_violation",
+      "used": 5
+    }
+  ],
+  "gpu_violations": 0,
+  "valid": false
+}

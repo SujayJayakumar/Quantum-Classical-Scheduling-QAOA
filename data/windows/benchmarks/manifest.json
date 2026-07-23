@@ -1,0 +1,10 @@
+{
+  "cluster": {
+    "cpu_capacity": 128,
+    "cpu_nodes": 410,
+    "gpu_capacity": 4,
+    "gpu_nodes": 12
+  },
+  "outputs": [],
+  "source": "/home/sim/Desktop/Quantum/data/windows/sample_trace_window_start_only.json"
+}

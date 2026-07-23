@@ -1,0 +1,124 @@
+{
+  "Q": [
+    [
+      -93.0,
+      20.0,
+      60.0,
+      0.0,
+      20.0,
+      0.0
+    ],
+    [
+      0.0,
+      -33.0,
+      0.0,
+      60.0,
+      0.0,
+      20.0
+    ],
+    [
+      0.0,
+      0.0,
+      -217.0,
+      20.0,
+      60.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      -37.0,
+      0.0,
+      60.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -91.0,
+      20.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -31.0
+    ]
+  ],
+  "metadata": {
+    "alpha_assign": 10.0,
+    "alpha_capacity": 10.0,
+    "assignment_term_count": 9,
+    "capacity_term_count": 12,
+    "excluded_terms": [
+      "communication_penalty",
+      "dependency_penalty",
+      "feature_compatibility_penalty",
+      "multi_node_jobs"
+    ],
+    "formulation": "mapping_only_qubo_v1",
+    "included_terms": [
+      "objective_runtime_cost",
+      "assignment_uniqueness",
+      "capacity_penalty"
+    ],
+    "job_count": 3,
+    "matrix_dimensions": [
+      6,
+      6
+    ],
+    "node_count": 2,
+    "objective_scale": 1.0,
+    "objective_term_count": 6,
+    "reference_alignment": "paper_style_task_node_mapping",
+    "variable_count": 6
+  },
+  "variables": {
+    "x(0,0)_j0_n0": {
+      "i": 0,
+      "index": 0,
+      "j": 0,
+      "job_id": "j0",
+      "node_id": "n0"
+    },
+    "x(0,1)_j0_n1": {
+      "i": 0,
+      "index": 1,
+      "j": 1,
+      "job_id": "j0",
+      "node_id": "n1"
+    },
+    "x(1,0)_j1_n0": {
+      "i": 1,
+      "index": 2,
+      "j": 0,
+      "job_id": "j1",
+      "node_id": "n0"
+    },
+    "x(1,1)_j1_n1": {
+      "i": 1,
+      "index": 3,
+      "j": 1,
+      "job_id": "j1",
+      "node_id": "n1"
+    },
+    "x(2,0)_j2_n0": {
+      "i": 2,
+      "index": 4,
+      "j": 0,
+      "job_id": "j2",
+      "node_id": "n0"
+    },
+    "x(2,1)_j2_n1": {
+      "i": 2,
+      "index": 5,
+      "j": 1,
+      "job_id": "j2",
+      "node_id": "n1"
+    }
+  }
+}

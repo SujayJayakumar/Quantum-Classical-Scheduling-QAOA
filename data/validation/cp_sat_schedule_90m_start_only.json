@@ -1,0 +1,305 @@
+{
+  "approx_node_utilization": 0.19971988795518208,
+  "best_objective_bound": 357.0,
+  "branches": 128,
+  "conflicts": 0,
+  "critical_release_duration_bound": {
+    "duration_seconds": 18001,
+    "earliest_completion_seconds": 21420,
+    "job_id": "100006.champ1",
+    "release_seconds": 3333
+  },
+  "feasible": true,
+  "job_count": 6,
+  "makespan_seconds": 21420,
+  "metadata": {
+    "capacity_mode": "exclusive",
+    "objective": "makespan",
+    "solver": "OR-Tools CP-SAT",
+    "source_metadata": {
+      "cpu_only": false,
+      "gpu_only": false,
+      "max_jobs": 12,
+      "mode": "start",
+      "queue_filter": [
+        "gpu"
+      ],
+      "scanned_records": 210287,
+      "selected_jobs": 6,
+      "selected_nodes": 6,
+      "source": "merged_all_jobs.jsonl",
+      "usable_records": 167773,
+      "window_end": "2025-01-12 19:00:00",
+      "window_seconds": 5400,
+      "window_start": "2025-01-12 17:30:00"
+    },
+    "time_grain_seconds": 60,
+    "time_limit_seconds": 30.0,
+    "workers": 8
+  },
+  "node_count": 6,
+  "node_usage": {
+    "r04gn01": [
+      {
+        "end_seconds": 780,
+        "job_id": "100001.champ1",
+        "start_seconds": 660
+      }
+    ],
+    "r04gn02": [
+      {
+        "end_seconds": 3720,
+        "job_id": "100007.champ1",
+        "start_seconds": 3420
+      }
+    ],
+    "r05gn01": [
+      {
+        "end_seconds": 1080,
+        "job_id": "100003.champ1",
+        "start_seconds": 900
+      }
+    ],
+    "r05gn03": [
+      {
+        "end_seconds": 780,
+        "job_id": "100002.champ1",
+        "start_seconds": 660
+      }
+    ],
+    "r05gn04": [
+      {
+        "end_seconds": 7200,
+        "job_id": "100000.champ1",
+        "start_seconds": 120
+      }
+    ],
+    "r05gn05": [
+      {
+        "end_seconds": 21420,
+        "job_id": "100006.champ1",
+        "start_seconds": 3360
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "capacity": {
+        "ncpus": 1,
+        "ngpus": 1
+      },
+      "kind": "gpu",
+      "node_id": "r04gn01"
+    },
+    {
+      "capacity": {
+        "ncpus": 1,
+        "ngpus": 1
+      },
+      "kind": "gpu",
+      "node_id": "r04gn02"
+    },
+    {
+      "capacity": {
+        "ncpus": 1,
+        "ngpus": 1
+      },
+      "kind": "gpu",
+      "node_id": "r05gn01"
+    },
+    {
+      "capacity": {
+        "ncpus": 1,
+        "ngpus": 1
+      },
+      "kind": "gpu",
+      "node_id": "r05gn03"
+    },
+    {
+      "capacity": {
+        "ncpus": 1,
+        "ngpus": 1
+      },
+      "kind": "gpu",
+      "node_id": "r05gn04"
+    },
+    {
+      "capacity": {
+        "ncpus": 96,
+        "ngpus": 1
+      },
+      "kind": "gpu",
+      "node_id": "r05gn05"
+    }
+  ],
+  "objective_value": 357.0,
+  "optimal": true,
+  "schedule": [
+    {
+      "assigned_nodes": [
+        "r05gn04"
+      ],
+      "duration_seconds": 7078,
+      "end": 120,
+      "end_seconds": 7200,
+      "job_id": "100000.champ1",
+      "name": "B4",
+      "queue": "gpu",
+      "release_seconds": 90,
+      "requested": {
+        "ncpus": 1,
+        "ngpus": 1,
+        "nodes": 1,
+        "observed_unique_nodes": [
+          "r04gn02"
+        ],
+        "per_node_ncpus": 1,
+        "per_node_ngpus": 1,
+        "raw_nodes": 1
+      },
+      "start": 2,
+      "start_seconds": 120,
+      "user": "amitl",
+      "wait_seconds": 0
+    },
+    {
+      "assigned_nodes": [
+        "r04gn01"
+      ],
+      "duration_seconds": 79,
+      "end": 13,
+      "end_seconds": 780,
+      "job_id": "100001.champ1",
+      "name": "B7",
+      "queue": "gpu",
+      "release_seconds": 622,
+      "requested": {
+        "ncpus": 1,
+        "ngpus": 1,
+        "nodes": 1,
+        "observed_unique_nodes": [
+          "r05gn03"
+        ],
+        "per_node_ncpus": 1,
+        "per_node_ngpus": 1,
+        "raw_nodes": 1
+      },
+      "start": 11,
+      "start_seconds": 660,
+      "user": "amitl",
+      "wait_seconds": 0
+    },
+    {
+      "assigned_nodes": [
+        "r05gn03"
+      ],
+      "duration_seconds": 120,
+      "end": 13,
+      "end_seconds": 780,
+      "job_id": "100002.champ1",
+      "name": "v2_l",
+      "queue": "gpu",
+      "release_seconds": 650,
+      "requested": {
+        "ncpus": 1,
+        "ngpus": 1,
+        "nodes": 1,
+        "observed_unique_nodes": [
+          "r04gn01"
+        ],
+        "per_node_ncpus": 1,
+        "per_node_ngpus": 1,
+        "raw_nodes": 1
+      },
+      "start": 11,
+      "start_seconds": 660,
+      "user": "amitl",
+      "wait_seconds": 0
+    },
+    {
+      "assigned_nodes": [
+        "r05gn01"
+      ],
+      "duration_seconds": 121,
+      "end": 18,
+      "end_seconds": 1080,
+      "job_id": "100003.champ1",
+      "name": "v2_s",
+      "queue": "gpu",
+      "release_seconds": 862,
+      "requested": {
+        "ncpus": 1,
+        "ngpus": 1,
+        "nodes": 1,
+        "observed_unique_nodes": [
+          "r05gn04"
+        ],
+        "per_node_ncpus": 1,
+        "per_node_ngpus": 1,
+        "raw_nodes": 1
+      },
+      "start": 15,
+      "start_seconds": 900,
+      "user": "amitl",
+      "wait_seconds": 0
+    },
+    {
+      "assigned_nodes": [
+        "r05gn05"
+      ],
+      "duration_seconds": 18001,
+      "end": 357,
+      "end_seconds": 21420,
+      "job_id": "100006.champ1",
+      "name": "cryosparc_P3_J5",
+      "queue": "gpu",
+      "release_seconds": 3333,
+      "requested": {
+        "ncpus": 96,
+        "ngpus": 0,
+        "nodes": 1,
+        "observed_unique_nodes": [
+          "r05gn05"
+        ],
+        "per_node_ncpus": 96,
+        "per_node_ngpus": 0,
+        "raw_nodes": 4
+      },
+      "start": 56,
+      "start_seconds": 3360,
+      "user": "saikatc",
+      "wait_seconds": 0
+    },
+    {
+      "assigned_nodes": [
+        "r04gn02"
+      ],
+      "duration_seconds": 269,
+      "end": 62,
+      "end_seconds": 3720,
+      "job_id": "100007.champ1",
+      "name": "v2_m",
+      "queue": "gpu",
+      "release_seconds": 3402,
+      "requested": {
+        "ncpus": 1,
+        "ngpus": 1,
+        "nodes": 1,
+        "observed_unique_nodes": [
+          "r05gn01"
+        ],
+        "per_node_ncpus": 1,
+        "per_node_ngpus": 1,
+        "raw_nodes": 1
+      },
+      "start": 57,
+      "start_seconds": 3420,
+      "user": "amitl",
+      "wait_seconds": 0
+    }
+  ],
+  "solver_wall_time_seconds": 0.007365476,
+  "status": "OPTIMAL",
+  "total_job_node_runtime_seconds": 25668,
+  "wall_time_seconds": 0.007472913999663433
+}

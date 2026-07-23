@@ -1,0 +1,86 @@
+{
+  "Q": [
+    [
+      -90.0,
+      20.0,
+      60.0,
+      0.0
+    ],
+    [
+      0.0,
+      -30.0,
+      0.0,
+      60.0
+    ],
+    [
+      0.0,
+      0.0,
+      -215.0,
+      20.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      -35.0
+    ]
+  ],
+  "metadata": {
+    "alpha_assign": 10.0,
+    "alpha_capacity": 10.0,
+    "assignment_term_count": 6,
+    "capacity_term_count": 6,
+    "excluded_terms": [
+      "communication_penalty",
+      "dependency_penalty",
+      "feature_compatibility_penalty",
+      "multi_node_jobs"
+    ],
+    "formulation": "mapping_only_qubo_v1",
+    "included_terms": [
+      "objective_runtime_cost",
+      "assignment_uniqueness",
+      "capacity_penalty"
+    ],
+    "job_count": 2,
+    "matrix_dimensions": [
+      4,
+      4
+    ],
+    "node_count": 2,
+    "objective_scale": 1.0,
+    "objective_term_count": 4,
+    "reference_alignment": "paper_style_task_node_mapping",
+    "variable_count": 4
+  },
+  "variables": {
+    "x(0,0)_j0_n0": {
+      "i": 0,
+      "index": 0,
+      "j": 0,
+      "job_id": "j0",
+      "node_id": "n0"
+    },
+    "x(0,1)_j0_n1": {
+      "i": 0,
+      "index": 1,
+      "j": 1,
+      "job_id": "j0",
+      "node_id": "n1"
+    },
+    "x(1,0)_j1_n0": {
+      "i": 1,
+      "index": 2,
+      "j": 0,
+      "job_id": "j1",
+      "node_id": "n0"
+    },
+    "x(1,1)_j1_n1": {
+      "i": 1,
+      "index": 3,
+      "j": 1,
+      "job_id": "j1",
+      "node_id": "n1"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "category": "LARGE",
+  "count": 1,
+  "windows": [
+    {
+      "candidate_nodes": 32,
+      "classification": "LARGE",
+      "contention_type": "cpu",
+      "cpu_capacity_total": 3712,
+      "cpu_pressure_ratio": 1.103448275862069,
+      "cpu_request_total": 4096,
+      "expected_variable_count": 32,
+      "gpu_capacity_total": 0,
+      "gpu_pressure_ratio": 0.0,
+      "gpu_request_total": 0,
+      "has_cpu_contention": true,
+      "has_gpu_contention": false,
+      "job_count": 1,
+      "job_density": 0.03125,
+      "label": "frozen_source_120_r02cn34_1",
+      "mixed_contention": false,
+      "peak_cpu_demand": 4096,
+      "peak_gpu_demand": 0,
+      "qubits": 32,
+      "rank": "MEDIUM",
+      "resource_competition_score": 1.1379310344827587,
+      "source": "/home/sim/Desktop/Quantum/merged_all_jobs.jsonl"
+    }
+  ]
+}

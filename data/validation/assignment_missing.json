@@ -1,0 +1,13 @@
+{
+  "assignment_violations": 1,
+  "cpu_violations": 0,
+  "details": [
+    {
+      "job_id": "j1",
+      "message": "Job has no node assignment.",
+      "type": "missing_assignment"
+    }
+  ],
+  "gpu_violations": 0,
+  "valid": false
+}

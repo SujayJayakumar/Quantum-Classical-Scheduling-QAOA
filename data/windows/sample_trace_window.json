@@ -1,0 +1,535 @@
+{
+  "jobs": [
+    {
+      "allocated_nodes": [
+        "r04gn06"
+      ],
+      "allocations": [
+        {
+          "ncpus": 1,
+          "ngpus": 1,
+          "node_id": "r04gn06"
+        }
+      ],
+      "end_offset_seconds": 1304,
+      "end_time": "2025-01-12 17:51:44",
+      "group": "csio",
+      "job_id": "99949.champ1",
+      "name": "yolo_ICRABase",
+      "priority": 0,
+      "project": "_pbs_project_default",
+      "queue": "gpu",
+      "raw": {
+        "exec_host": "r04gn06/0",
+        "exec_vnode": "(r04gn06:ngpus=1:ncpus=1)",
+        "exit_status": "0",
+        "schedselect": "1:ngpus=1:mpiprocs=128:ncpus=1",
+        "select": "1:ngpus=1:mpiprocs=128"
+      },
+      "requested": {
+        "mem_kib": null,
+        "mpiprocs": 128,
+        "ncpus": 1,
+        "ngpus": 1,
+        "nodes": 1,
+        "walltime_seconds": 172800
+      },
+      "runtime_seconds": 15009,
+      "start_offset_seconds": -13705,
+      "start_time": "2025-01-12 13:41:35",
+      "submit_offset_seconds": -13705,
+      "submit_time": "2025-01-12 13:41:35",
+      "used": {
+        "cpupercent": 1643,
+        "mem_kib": 151322248,
+        "ncpus": 1,
+        "vmem_kib": 1333061556
+      },
+      "user": "spoddar",
+      "wait_seconds": 0
+    },
+    {
+      "allocated_nodes": [
+        "r04gn04"
+      ],
+      "allocations": [
+        {
+          "ncpus": 1,
+          "ngpus": 1,
+          "node_id": "r04gn04"
+        }
+      ],
+      "end_offset_seconds": 496,
+      "end_time": "2025-01-12 17:38:16",
+      "group": "csio",
+      "job_id": "99986.champ1",
+      "name": "v2_s",
+      "priority": 0,
+      "project": "_pbs_project_default",
+      "queue": "gpu",
+      "raw": {
+        "exec_host": "r04gn04/0",
+        "exec_vnode": "(r04gn04:ngpus=1:ncpus=1)",
+        "exit_status": "0",
+        "schedselect": "1:ngpus=1:mpiprocs=128:ncpus=1",
+        "select": "1:ngpus=1:mpiprocs=128"
+      },
+      "requested": {
+        "mem_kib": null,
+        "mpiprocs": 128,
+        "ncpus": 1,
+        "ngpus": 1,
+        "nodes": 1,
+        "walltime_seconds": 216000
+      },
+      "runtime_seconds": 4715,
+      "start_offset_seconds": -4219,
+      "start_time": "2025-01-12 16:19:41",
+      "submit_offset_seconds": -4219,
+      "submit_time": "2025-01-12 16:19:41",
+      "used": {
+        "cpupercent": 140,
+        "mem_kib": 20253552,
+        "ncpus": 1,
+        "vmem_kib": 371640908
+      },
+      "user": "amitl",
+      "wait_seconds": 0
+    },
+    {
+      "allocated_nodes": [
+        "r04gn02"
+      ],
+      "allocations": [
+        {
+          "ncpus": 1,
+          "ngpus": 1,
+          "node_id": "r04gn02"
+        }
+      ],
+      "end_offset_seconds": 7169,
+      "end_time": "2025-01-12 19:29:29",
+      "group": "csio",
+      "job_id": "100000.champ1",
+      "name": "B4",
+      "priority": 0,
+      "project": "_pbs_project_default",
+      "queue": "gpu",
+      "raw": {
+        "exec_host": "r04gn02/0",
+        "exec_vnode": "(r04gn02:ngpus=1:ncpus=1)",
+        "exit_status": "0",
+        "schedselect": "1:ngpus=1:mpiprocs=128:ncpus=1",
+        "select": "1:ngpus=1:mpiprocs=128"
+      },
+      "requested": {
+        "mem_kib": null,
+        "mpiprocs": 128,
+        "ncpus": 1,
+        "ngpus": 1,
+        "nodes": 1,
+        "walltime_seconds": 216000
+      },
+      "runtime_seconds": 7078,
+      "start_offset_seconds": 91,
+      "start_time": "2025-01-12 17:31:31",
+      "submit_offset_seconds": 90,
+      "submit_time": "2025-01-12 17:31:30",
+      "used": {
+        "cpupercent": 126,
+        "mem_kib": 19914852,
+        "ncpus": 1,
+        "vmem_kib": 461200608
+      },
+      "user": "amitl",
+      "wait_seconds": 1
+    },
+    {
+      "allocated_nodes": [
+        "r05gn03"
+      ],
+      "allocations": [
+        {
+          "ncpus": 1,
+          "ngpus": 1,
+          "node_id": "r05gn03"
+        }
+      ],
+      "end_offset_seconds": 701,
+      "end_time": "2025-01-12 17:41:41",
+      "group": "csio",
+      "job_id": "100001.champ1",
+      "name": "B7",
+      "priority": 0,
+      "project": "_pbs_project_default",
+      "queue": "gpu",
+      "raw": {
+        "exec_host": "r05gn03/0",
+        "exec_vnode": "(r05gn03:ngpus=1:ncpus=1)",
+        "exit_status": "0",
+        "schedselect": "1:ngpus=1:mpiprocs=128:ncpus=1",
+        "select": "1:ngpus=1:mpiprocs=128"
+      },
+      "requested": {
+        "mem_kib": null,
+        "mpiprocs": 128,
+        "ncpus": 1,
+        "ngpus": 1,
+        "nodes": 1,
+        "walltime_seconds": 216000
+      },
+      "runtime_seconds": 79,
+      "start_offset_seconds": 622,
+      "start_time": "2025-01-12 17:40:22",
+      "submit_offset_seconds": 622,
+      "submit_time": "2025-01-12 17:40:22",
+      "used": {
+        "cpupercent": 74,
+        "mem_kib": 394804,
+        "ncpus": 1,
+        "vmem_kib": 2735108
+      },
+      "user": "amitl",
+      "wait_seconds": 0
+    },
+    {
+      "allocated_nodes": [
+        "r04gn01"
+      ],
+      "allocations": [
+        {
+          "ncpus": 1,
+          "ngpus": 1,
+          "node_id": "r04gn01"
+        }
+      ],
+      "end_offset_seconds": 771,
+      "end_time": "2025-01-12 17:42:51",
+      "group": "csio",
+      "job_id": "100002.champ1",
+      "name": "v2_l",
+      "priority": 0,
+      "project": "_pbs_project_default",
+      "queue": "gpu",
+      "raw": {
+        "exec_host": "r04gn01/0",
+        "exec_vnode": "(r04gn01:ngpus=1:ncpus=1)",
+        "exit_status": "0",
+        "schedselect": "1:ngpus=1:mpiprocs=128:ncpus=1",
+        "select": "1:ngpus=1:mpiprocs=128"
+      },
+      "requested": {
+        "mem_kib": null,
+        "mpiprocs": 128,
+        "ncpus": 1,
+        "ngpus": 1,
+        "nodes": 1,
+        "walltime_seconds": 216000
+      },
+      "runtime_seconds": 120,
+      "start_offset_seconds": 651,
+      "start_time": "2025-01-12 17:40:51",
+      "submit_offset_seconds": 650,
+      "submit_time": "2025-01-12 17:40:50",
+      "used": {
+        "cpupercent": 71,
+        "mem_kib": 12586124,
+        "ncpus": 1,
+        "vmem_kib": 142983604
+      },
+      "user": "amitl",
+      "wait_seconds": 1
+    },
+    {
+      "allocated_nodes": [
+        "r05gn04"
+      ],
+      "allocations": [
+        {
+          "ncpus": 1,
+          "ngpus": 1,
+          "node_id": "r05gn04"
+        }
+      ],
+      "end_offset_seconds": 983,
+      "end_time": "2025-01-12 17:46:23",
+      "group": "csio",
+      "job_id": "100003.champ1",
+      "name": "v2_s",
+      "priority": 0,
+      "project": "_pbs_project_default",
+      "queue": "gpu",
+      "raw": {
+        "exec_host": "r05gn04/0",
+        "exec_vnode": "(r05gn04:ngpus=1:ncpus=1)",
+        "exit_status": "0",
+        "schedselect": "1:ngpus=1:mpiprocs=128:ncpus=1",
+        "select": "1:ngpus=1:mpiprocs=128"
+      },
+      "requested": {
+        "mem_kib": null,
+        "mpiprocs": 128,
+        "ncpus": 1,
+        "ngpus": 1,
+        "nodes": 1,
+        "walltime_seconds": 216000
+      },
+      "runtime_seconds": 121,
+      "start_offset_seconds": 862,
+      "start_time": "2025-01-12 17:44:22",
+      "submit_offset_seconds": 862,
+      "submit_time": "2025-01-12 17:44:22",
+      "used": {
+        "cpupercent": 73,
+        "mem_kib": 3465276,
+        "ncpus": 1,
+        "vmem_kib": 35745116
+      },
+      "user": "amitl",
+      "wait_seconds": 0
+    },
+    {
+      "allocated_nodes": [
+        "r05gn05"
+      ],
+      "allocations": [
+        {
+          "ncpus": 96,
+          "node_id": "r05gn05"
+        }
+      ],
+      "end_offset_seconds": 21334,
+      "end_time": "2025-01-12 23:25:34",
+      "group": "ccmb",
+      "job_id": "100006.champ1",
+      "name": "cryosparc_P3_J5",
+      "priority": 0,
+      "project": "_pbs_project_default",
+      "queue": "gpu",
+      "raw": {
+        "exec_host": "r05gn05/0*24+r05gn05/1*24+r05gn05/2*24+r05gn05/3*24",
+        "exec_vnode": "(r05gn05:ncpus=24)+(r05gn05:ncpus=24)+(r05gn05:ncpus=24)+(r05g\n\tn05:ncpus=24)",
+        "exit_status": "0",
+        "schedselect": "4:ncpus=24",
+        "select": "4:ncpus=24"
+      },
+      "requested": {
+        "mem_kib": null,
+        "mpiprocs": 0,
+        "ncpus": 96,
+        "ngpus": 0,
+        "nodes": 4,
+        "walltime_seconds": 259200
+      },
+      "runtime_seconds": 18001,
+      "start_offset_seconds": 3333,
+      "start_time": "2025-01-12 18:25:33",
+      "submit_offset_seconds": 3333,
+      "submit_time": "2025-01-12 18:25:33",
+      "used": {
+        "cpupercent": 386,
+        "mem_kib": 27572576,
+        "ncpus": 96,
+        "vmem_kib": 149559252
+      },
+      "user": "saikatc",
+      "wait_seconds": 0
+    },
+    {
+      "allocated_nodes": [
+        "r05gn01"
+      ],
+      "allocations": [
+        {
+          "ncpus": 1,
+          "ngpus": 1,
+          "node_id": "r05gn01"
+        }
+      ],
+      "end_offset_seconds": 3671,
+      "end_time": "2025-01-12 18:31:11",
+      "group": "csio",
+      "job_id": "100007.champ1",
+      "name": "v2_m",
+      "priority": 0,
+      "project": "_pbs_project_default",
+      "queue": "gpu",
+      "raw": {
+        "exec_host": "r05gn01/0",
+        "exec_vnode": "(r05gn01:ngpus=1:ncpus=1)",
+        "exit_status": "0",
+        "schedselect": "1:ngpus=1:mpiprocs=128:ncpus=1",
+        "select": "1:ngpus=1:mpiprocs=128"
+      },
+      "requested": {
+        "mem_kib": null,
+        "mpiprocs": 128,
+        "ncpus": 1,
+        "ngpus": 1,
+        "nodes": 1,
+        "walltime_seconds": 216000
+      },
+      "runtime_seconds": 269,
+      "start_offset_seconds": 3402,
+      "start_time": "2025-01-12 18:26:42",
+      "submit_offset_seconds": 3402,
+      "submit_time": "2025-01-12 18:26:42",
+      "used": {
+        "cpupercent": 20,
+        "mem_kib": 3590824,
+        "ncpus": 1,
+        "vmem_kib": 43317892
+      },
+      "user": "amitl",
+      "wait_seconds": 0
+    },
+    {
+      "allocated_nodes": [
+        "r04gn03"
+      ],
+      "allocations": [
+        {
+          "ncpus": 1,
+          "ngpus": 1,
+          "node_id": "r04gn03"
+        }
+      ],
+      "end_offset_seconds": 181039,
+      "end_time": "2025-01-14 19:47:19",
+      "group": "csio",
+      "job_id": "100016.champ1",
+      "name": "yolo_ICRA",
+      "priority": 0,
+      "project": "_pbs_project_default",
+      "queue": "gpu",
+      "raw": {
+        "exec_host": "r04gn03/0",
+        "exec_vnode": "(r04gn03:ngpus=1:ncpus=1)",
+        "exit_status": "271",
+        "schedselect": "1:ngpus=1:mpiprocs=128:ncpus=1",
+        "select": "1:ngpus=1:mpiprocs=128"
+      },
+      "requested": {
+        "mem_kib": null,
+        "mpiprocs": 128,
+        "ncpus": 1,
+        "ngpus": 1,
+        "nodes": 1,
+        "walltime_seconds": 172800
+      },
+      "runtime_seconds": 172845,
+      "start_offset_seconds": 8194,
+      "start_time": "2025-01-12 19:46:34",
+      "submit_offset_seconds": 8194,
+      "submit_time": "2025-01-12 19:46:34",
+      "used": {
+        "cpupercent": 286,
+        "mem_kib": 45369688,
+        "ncpus": 1,
+        "vmem_kib": 336041080
+      },
+      "user": "spoddar",
+      "wait_seconds": 0
+    }
+  ],
+  "metadata": {
+    "cpu_only": false,
+    "gpu_only": false,
+    "max_jobs": 12,
+    "mode": "overlap",
+    "queue_filter": [
+      "gpu"
+    ],
+    "scanned_records": 210287,
+    "selected_jobs": 9,
+    "selected_nodes": 9,
+    "source": "merged_all_jobs.jsonl",
+    "usable_records": 167773,
+    "window_end": "2025-01-12 20:30:00",
+    "window_seconds": 10800,
+    "window_start": "2025-01-12 17:30:00"
+  },
+  "nodes": [
+    {
+      "job_count_in_window": 1,
+      "kind": "gpu",
+      "node_id": "r04gn01",
+      "observed_capacity": {
+        "ncpus": 1,
+        "ngpus": 1
+      }
+    },
+    {
+      "job_count_in_window": 1,
+      "kind": "gpu",
+      "node_id": "r04gn02",
+      "observed_capacity": {
+        "ncpus": 1,
+        "ngpus": 1
+      }
+    },
+    {
+      "job_count_in_window": 1,
+      "kind": "gpu",
+      "node_id": "r04gn03",
+      "observed_capacity": {
+        "ncpus": 1,
+        "ngpus": 1
+      }
+    },
+    {
+      "job_count_in_window": 1,
+      "kind": "gpu",
+      "node_id": "r04gn04",
+      "observed_capacity": {
+        "ncpus": 1,
+        "ngpus": 1
+      }
+    },
+    {
+      "job_count_in_window": 1,
+      "kind": "gpu",
+      "node_id": "r04gn06",
+      "observed_capacity": {
+        "ncpus": 1,
+        "ngpus": 1
+      }
+    },
+    {
+      "job_count_in_window": 1,
+      "kind": "gpu",
+      "node_id": "r05gn01",
+      "observed_capacity": {
+        "ncpus": 1,
+        "ngpus": 1
+      }
+    },
+    {
+      "job_count_in_window": 1,
+      "kind": "gpu",
+      "node_id": "r05gn03",
+      "observed_capacity": {
+        "ncpus": 1,
+        "ngpus": 1
+      }
+    },
+    {
+      "job_count_in_window": 1,
+      "kind": "gpu",
+      "node_id": "r05gn04",
+      "observed_capacity": {
+        "ncpus": 1,
+        "ngpus": 1
+      }
+    },
+    {
+      "job_count_in_window": 1,
+      "kind": "gpu",
+      "node_id": "r05gn05",
+      "observed_capacity": {
+        "ncpus": 96,
+        "ngpus": 0
+      }
+    }
+  ]
+}
