@@ -1,0 +1,2 @@
+label,job_count,node_count,qubo_variables,qubo_build_runtime_seconds,sa_feasibility_rate,sa_objective_value,sa_qubo_energy,sa_decoded_makespan,sa_utilization,sa_runtime_seconds,cp_sat_objective_value,cp_sat_decoded_makespan,cp_sat_utilization,cp_sat_runtime_seconds,assignment_overlap_with_cp_sat_pct,energy_gap_vs_bruteforce,sa_matches_cp_sat,sa_assignment_match_pct_vs_cp_sat
+gpu-only_10_10_jobs,10,422,4220,0.49345837100008794,0.0,,,181246,1.0708319080145217,12.891102923000062,1470.3333333333333,194611,0.997292033852146,0.04535006199989766,40.0,,False,0.0

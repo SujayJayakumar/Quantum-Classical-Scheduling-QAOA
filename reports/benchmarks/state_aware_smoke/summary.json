@@ -1,0 +1,121 @@
+{
+  "benchmarks": [
+    {
+      "benchmarks": [
+        {
+          "label": "cpu_10_0_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 0.0,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.0026020760001301824,
+                "qubo_build": 0.0004578560001391452,
+                "sa": 0.0010183270001107303
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "167299.champ1": "r01cn01",
+                "167303.champ1": "r01cn01",
+                "167305.champ1": "r01cn01",
+                "167306.champ1": "r01cn01",
+                "167312.champ1": "r01cn01",
+                "167313.champ1": "r01cn01",
+                "167314.champ1": "r01cn01",
+                "167315.champ1": "r01cn01",
+                "167316.champ1": "r01cn01",
+                "167319.champ1": "r01cn01"
+              },
+              "decoded_makespan": 3228,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.0026020760001301824,
+              "utilization": null
+            },
+            "job_count": 10,
+            "node_count": 8,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 360,
+                "cpu_capacity_term_count": 440,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 440,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  80,
+                  80
+                ],
+                "node_count": 8,
+                "objective_scale": 1.0,
+                "objective_term_count": 80,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 80
+              },
+              "runtime_seconds": 0.0004578560001391452,
+              "variable_count": 80
+            },
+            "sa": {
+              "decoded_assignment": {
+                "167299.champ1": "r01cn07",
+                "167303.champ1": "r01cn08",
+                "167305.champ1": "r01cn06",
+                "167306.champ1": "r01cn05",
+                "167312.champ1": "r01cn07",
+                "167313.champ1": "r01cn08",
+                "167314.champ1": "r01cn08",
+                "167315.champ1": "r01cn08",
+                "167316.champ1": "r01cn07",
+                "167319.champ1": "r01cn08"
+              },
+              "decoded_makespan": 3228,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 0.0010183270001107303,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 0,
+                "cpu_violations": 0,
+                "details": [],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": true
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [],
+      "source_jobs": 10,
+      "source_label": "cpu_10_0",
+      "target_sizes": [
+        10
+      ]
+    }
+  ]
+}

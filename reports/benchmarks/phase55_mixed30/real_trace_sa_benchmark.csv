@@ -1,0 +1,4 @@
+label,job_count,node_count,qubo_variables,qubo_build_runtime_seconds,sa_feasibility_rate,sa_objective_value,sa_qubo_energy,sa_decoded_makespan,sa_utilization,sa_runtime_seconds,cp_sat_objective_value,cp_sat_decoded_makespan,cp_sat_utilization,cp_sat_runtime_seconds,assignment_overlap_with_cp_sat_pct,energy_gap_vs_bruteforce,sa_matches_cp_sat,sa_assignment_match_pct_vs_cp_sat
+mixed_30_10_jobs,10,422,4220,0.4967940199999248,0.0,,,207421,1.237647104198707,12.941166323999823,58.67424242424243,7835,0.98851308232291,0.04847335399995245,33.333333333333336,,False,0.0
+mixed_30_20_jobs,20,422,8440,1.7024496960000306,0.0,,,371142,1.2065840028883823,51.76404409099996,1506.401515151515,198935,0.9995475909216578,0.17691511100019852,56.25,,False,0.0
+mixed_30_30_jobs,30,422,12660,3.5692887430000155,0.0,,,371826,1.2085088186409771,114.91615779799986,1518.0757575757573,200476,0.9995510684570722,0.047729195000101754,53.84615384615385,,False,0.0

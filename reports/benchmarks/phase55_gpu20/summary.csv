@@ -1,0 +1,3 @@
+category,jobs,feasible,makespan,runtime_seconds,assignment_overlap,cp_sat_runtime_seconds
+gpu-only_20,10,True,181246,12.90361079299987,40.0,0.04587270299998636
+gpu-only_20,20,False,181530,51.85027637999997,55.0,0.15670223799997984

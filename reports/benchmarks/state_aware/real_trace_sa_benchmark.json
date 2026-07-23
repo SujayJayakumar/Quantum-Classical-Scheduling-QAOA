@@ -1,0 +1,3416 @@
+{
+  "benchmarks": [
+    {
+      "benchmarks": [
+        {
+          "label": "cpu_10_0_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 70.0,
+              "brute_force": {
+                "best_energy_feasible_assignment": {
+                  "205613.champ1": "r01cn02",
+                  "205614.champ1": "r01cn02",
+                  "205619.champ1": "r01cn02",
+                  "205622.champ1": "r01cn02",
+                  "205625.champ1": "r01cn02",
+                  "205626.champ1": "r01cn02",
+                  "205627.champ1": "r01cn02",
+                  "205628.champ1": "r01cn02",
+                  "205629.champ1": "r01cn02",
+                  "205630.champ1": "r01cn02"
+                },
+                "best_energy_feasible_energy": -100.0,
+                "reference_assignment": {
+                  "205613.champ1": "r01cn02",
+                  "205614.champ1": "r01cn02",
+                  "205619.champ1": "r01cn02",
+                  "205622.champ1": "r01cn02",
+                  "205625.champ1": "r01cn02",
+                  "205626.champ1": "r01cn02",
+                  "205627.champ1": "r01cn02",
+                  "205628.champ1": "r01cn02",
+                  "205629.champ1": "r01cn02",
+                  "205630.champ1": "r01cn02"
+                },
+                "reference_energy_gap": -100.0,
+                "runtime_seconds": 0.0007394499999691106
+              },
+              "energy_gap_vs_bruteforce": 30.0,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": false,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": 0.0007394499999691106,
+                "cp_sat": 0.010543269999971017,
+                "qubo_build": 7.81159999405645e-05,
+                "sa": 0.00011664599992400326
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205613.champ1": "r01cn02",
+                "205614.champ1": "r01cn02",
+                "205619.champ1": "r01cn02",
+                "205622.champ1": "r01cn02",
+                "205625.champ1": "r01cn02",
+                "205626.champ1": "r01cn02",
+                "205627.champ1": "r01cn02",
+                "205628.champ1": "r01cn02",
+                "205629.champ1": "r01cn02",
+                "205630.champ1": "r01cn02"
+              },
+              "decoded_makespan": 26845,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.010543269999971017,
+              "utilization": null
+            },
+            "job_count": 10,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 10,
+                "cpu_capacity_term_count": 55,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 55,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  10,
+                  10
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 10,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 10
+              },
+              "runtime_seconds": 7.81159999405645e-05,
+              "variable_count": 10
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205613.champ1": "r01cn02",
+                "205614.champ1": "r01cn02",
+                "205625.champ1": "r01cn02",
+                "205626.champ1": "r01cn02",
+                "205627.champ1": "r01cn02",
+                "205628.champ1": "r01cn02",
+                "205629.champ1": "r01cn02"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 0.00011664599992400326,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 3,
+                "cpu_violations": 0,
+                "details": [
+                  {
+                    "job_id": "205619.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205622.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205630.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": false
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [
+        20,
+        30
+      ],
+      "source_jobs": 10,
+      "source_label": "cpu_10_0",
+      "target_sizes": [
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "benchmarks": [
+        {
+          "label": "cpu_20_1_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 70.0,
+              "brute_force": {
+                "best_energy_feasible_assignment": {
+                  "205613.champ1": "r01cn02",
+                  "205614.champ1": "r01cn02",
+                  "205619.champ1": "r01cn02",
+                  "205622.champ1": "r01cn02",
+                  "205625.champ1": "r01cn02",
+                  "205626.champ1": "r01cn02",
+                  "205627.champ1": "r01cn02",
+                  "205628.champ1": "r01cn02",
+                  "205629.champ1": "r01cn02",
+                  "205630.champ1": "r01cn02"
+                },
+                "best_energy_feasible_energy": -100.0,
+                "reference_assignment": {
+                  "205613.champ1": "r01cn02",
+                  "205614.champ1": "r01cn02",
+                  "205619.champ1": "r01cn02",
+                  "205622.champ1": "r01cn02",
+                  "205625.champ1": "r01cn02",
+                  "205626.champ1": "r01cn02",
+                  "205627.champ1": "r01cn02",
+                  "205628.champ1": "r01cn02",
+                  "205629.champ1": "r01cn02",
+                  "205630.champ1": "r01cn02"
+                },
+                "reference_energy_gap": -100.0,
+                "runtime_seconds": 0.0006497000000535991
+              },
+              "energy_gap_vs_bruteforce": 30.0,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": false,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": 0.0006497000000535991,
+                "cp_sat": 0.000536721999992551,
+                "qubo_build": 6.189300006553822e-05,
+                "sa": 9.824799997204536e-05
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205613.champ1": "r01cn02",
+                "205614.champ1": "r01cn02",
+                "205619.champ1": "r01cn02",
+                "205622.champ1": "r01cn02",
+                "205625.champ1": "r01cn02",
+                "205626.champ1": "r01cn02",
+                "205627.champ1": "r01cn02",
+                "205628.champ1": "r01cn02",
+                "205629.champ1": "r01cn02",
+                "205630.champ1": "r01cn02"
+              },
+              "decoded_makespan": 26845,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.000536721999992551,
+              "utilization": null
+            },
+            "job_count": 10,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 10,
+                "cpu_capacity_term_count": 55,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 55,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  10,
+                  10
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 10,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 10
+              },
+              "runtime_seconds": 6.189300006553822e-05,
+              "variable_count": 10
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205613.champ1": "r01cn02",
+                "205614.champ1": "r01cn02",
+                "205625.champ1": "r01cn02",
+                "205626.champ1": "r01cn02",
+                "205627.champ1": "r01cn02",
+                "205628.champ1": "r01cn02",
+                "205629.champ1": "r01cn02"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 9.824799997204536e-05,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 3,
+                "cpu_violations": 0,
+                "details": [
+                  {
+                    "job_id": "205619.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205622.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205630.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": false
+              }
+            }
+          }
+        },
+        {
+          "label": "cpu_20_1_20_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 65.0,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.0006714810000403304,
+                "qubo_build": 0.0001445079999484733,
+                "sa": 0.00016424700004336046
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205613.champ1": "r01cn02",
+                "205614.champ1": "r01cn02",
+                "205619.champ1": "r01cn02",
+                "205622.champ1": "r01cn02",
+                "205625.champ1": "r01cn02",
+                "205626.champ1": "r01cn02",
+                "205627.champ1": "r01cn02",
+                "205628.champ1": "r01cn02",
+                "205629.champ1": "r01cn02",
+                "205630.champ1": "r01cn02",
+                "205632.champ1": "r01cn02",
+                "205633.champ1": "r01cn02",
+                "205634.champ1": "r01cn02",
+                "205637.champ1": "r01cn02",
+                "205639.champ1": "r01cn02",
+                "205642.champ1": "r01cn02",
+                "205643.champ1": "r01cn02",
+                "205644.champ1": "r01cn02",
+                "205646.champ1": "r01cn02",
+                "205649.champ1": "r01cn02"
+              },
+              "decoded_makespan": 39121,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.0006714810000403304,
+              "utilization": null
+            },
+            "job_count": 20,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 20,
+                "cpu_capacity_term_count": 210,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 210,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 20,
+                "matrix_dimensions": [
+                  20,
+                  20
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 20,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 20
+              },
+              "runtime_seconds": 0.0001445079999484733,
+              "variable_count": 20
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205613.champ1": "r01cn02",
+                "205614.champ1": "r01cn02",
+                "205619.champ1": "r01cn02",
+                "205625.champ1": "r01cn02",
+                "205626.champ1": "r01cn02",
+                "205627.champ1": "r01cn02",
+                "205628.champ1": "r01cn02",
+                "205629.champ1": "r01cn02",
+                "205630.champ1": "r01cn02",
+                "205637.champ1": "r01cn02",
+                "205642.champ1": "r01cn02",
+                "205643.champ1": "r01cn02",
+                "205646.champ1": "r01cn02"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 0.00016424700004336046,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 7,
+                "cpu_violations": 1,
+                "details": [
+                  {
+                    "job_id": "205622.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205632.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205633.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205634.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205639.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205644.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205649.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "205613.champ1",
+                      "205614.champ1",
+                      "205619.champ1",
+                      "205625.champ1",
+                      "205626.champ1",
+                      "205627.champ1",
+                      "205628.champ1",
+                      "205629.champ1",
+                      "205630.champ1",
+                      "205637.champ1",
+                      "205642.champ1",
+                      "205643.champ1",
+                      "205646.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "r01cn02",
+                    "type": "cpu_capacity_violation",
+                    "used": 212
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": false
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [
+        30
+      ],
+      "source_jobs": 20,
+      "source_label": "cpu_20_1",
+      "target_sizes": [
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "benchmarks": [
+        {
+          "label": "cpu_30_2_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 70.0,
+              "brute_force": {
+                "best_energy_feasible_assignment": {
+                  "205613.champ1": "r01cn02",
+                  "205614.champ1": "r01cn02",
+                  "205619.champ1": "r01cn02",
+                  "205622.champ1": "r01cn02",
+                  "205625.champ1": "r01cn02",
+                  "205626.champ1": "r01cn02",
+                  "205627.champ1": "r01cn02",
+                  "205628.champ1": "r01cn02",
+                  "205629.champ1": "r01cn02",
+                  "205630.champ1": "r01cn02"
+                },
+                "best_energy_feasible_energy": -100.0,
+                "reference_assignment": {
+                  "205613.champ1": "r01cn02",
+                  "205614.champ1": "r01cn02",
+                  "205619.champ1": "r01cn02",
+                  "205622.champ1": "r01cn02",
+                  "205625.champ1": "r01cn02",
+                  "205626.champ1": "r01cn02",
+                  "205627.champ1": "r01cn02",
+                  "205628.champ1": "r01cn02",
+                  "205629.champ1": "r01cn02",
+                  "205630.champ1": "r01cn02"
+                },
+                "reference_energy_gap": -100.0,
+                "runtime_seconds": 0.0007128169999077727
+              },
+              "energy_gap_vs_bruteforce": 30.0,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": false,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": 0.0007128169999077727,
+                "cp_sat": 0.0004571340000438795,
+                "qubo_build": 6.730800009790983e-05,
+                "sa": 9.19980000162468e-05
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205613.champ1": "r01cn02",
+                "205614.champ1": "r01cn02",
+                "205619.champ1": "r01cn02",
+                "205622.champ1": "r01cn02",
+                "205625.champ1": "r01cn02",
+                "205626.champ1": "r01cn02",
+                "205627.champ1": "r01cn02",
+                "205628.champ1": "r01cn02",
+                "205629.champ1": "r01cn02",
+                "205630.champ1": "r01cn02"
+              },
+              "decoded_makespan": 26845,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.0004571340000438795,
+              "utilization": null
+            },
+            "job_count": 10,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 10,
+                "cpu_capacity_term_count": 55,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 55,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  10,
+                  10
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 10,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 10
+              },
+              "runtime_seconds": 6.730800009790983e-05,
+              "variable_count": 10
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205613.champ1": "r01cn02",
+                "205614.champ1": "r01cn02",
+                "205625.champ1": "r01cn02",
+                "205626.champ1": "r01cn02",
+                "205627.champ1": "r01cn02",
+                "205628.champ1": "r01cn02",
+                "205629.champ1": "r01cn02"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 9.19980000162468e-05,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 3,
+                "cpu_violations": 0,
+                "details": [
+                  {
+                    "job_id": "205619.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205622.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205630.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": false
+              }
+            }
+          }
+        },
+        {
+          "label": "cpu_30_2_20_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 65.0,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.0007031339999912234,
+                "qubo_build": 0.00014168399991376646,
+                "sa": 0.00015848900000037247
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205613.champ1": "r01cn02",
+                "205614.champ1": "r01cn02",
+                "205619.champ1": "r01cn02",
+                "205622.champ1": "r01cn02",
+                "205625.champ1": "r01cn02",
+                "205626.champ1": "r01cn02",
+                "205627.champ1": "r01cn02",
+                "205628.champ1": "r01cn02",
+                "205629.champ1": "r01cn02",
+                "205630.champ1": "r01cn02",
+                "205632.champ1": "r01cn02",
+                "205633.champ1": "r01cn02",
+                "205634.champ1": "r01cn02",
+                "205637.champ1": "r01cn02",
+                "205639.champ1": "r01cn02",
+                "205642.champ1": "r01cn02",
+                "205643.champ1": "r01cn02",
+                "205644.champ1": "r01cn02",
+                "205646.champ1": "r01cn02",
+                "205649.champ1": "r01cn02"
+              },
+              "decoded_makespan": 39121,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.0007031339999912234,
+              "utilization": null
+            },
+            "job_count": 20,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 20,
+                "cpu_capacity_term_count": 210,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 210,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 20,
+                "matrix_dimensions": [
+                  20,
+                  20
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 20,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 20
+              },
+              "runtime_seconds": 0.00014168399991376646,
+              "variable_count": 20
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205613.champ1": "r01cn02",
+                "205614.champ1": "r01cn02",
+                "205619.champ1": "r01cn02",
+                "205625.champ1": "r01cn02",
+                "205626.champ1": "r01cn02",
+                "205627.champ1": "r01cn02",
+                "205628.champ1": "r01cn02",
+                "205629.champ1": "r01cn02",
+                "205630.champ1": "r01cn02",
+                "205637.champ1": "r01cn02",
+                "205642.champ1": "r01cn02",
+                "205643.champ1": "r01cn02",
+                "205646.champ1": "r01cn02"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 0.00015848900000037247,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 7,
+                "cpu_violations": 1,
+                "details": [
+                  {
+                    "job_id": "205622.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205632.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205633.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205634.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205639.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205644.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205649.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "205613.champ1",
+                      "205614.champ1",
+                      "205619.champ1",
+                      "205625.champ1",
+                      "205626.champ1",
+                      "205627.champ1",
+                      "205628.champ1",
+                      "205629.champ1",
+                      "205630.champ1",
+                      "205637.champ1",
+                      "205642.champ1",
+                      "205643.champ1",
+                      "205646.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "r01cn02",
+                    "type": "cpu_capacity_violation",
+                    "used": 212
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": false
+              }
+            }
+          }
+        },
+        {
+          "label": "cpu_30_2_30_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 60.0,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.0007344250000187458,
+                "qubo_build": 0.0002725529999452192,
+                "sa": 0.0002621590000444485
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205613.champ1": "r01cn02",
+                "205614.champ1": "r01cn02",
+                "205619.champ1": "r01cn02",
+                "205622.champ1": "r01cn02",
+                "205625.champ1": "r01cn02",
+                "205626.champ1": "r01cn02",
+                "205627.champ1": "r01cn02",
+                "205628.champ1": "r01cn02",
+                "205629.champ1": "r01cn02",
+                "205630.champ1": "r01cn02",
+                "205632.champ1": "r01cn02",
+                "205633.champ1": "r01cn02",
+                "205634.champ1": "r01cn02",
+                "205637.champ1": "r01cn02",
+                "205639.champ1": "r01cn02",
+                "205642.champ1": "r01cn02",
+                "205643.champ1": "r01cn02",
+                "205644.champ1": "r01cn02",
+                "205646.champ1": "r01cn02",
+                "205649.champ1": "r01cn02",
+                "205650.champ1": "r01cn02",
+                "205651.champ1": "r01cn02",
+                "205653.champ1": "r01cn02",
+                "205654.champ1": "r01cn02",
+                "205655.champ1": "r01cn02",
+                "205656.champ1": "r01cn02",
+                "205657.champ1": "r01cn02",
+                "205659.champ1": "r01cn02",
+                "205660.champ1": "r01cn02",
+                "205661.champ1": "r01cn02"
+              },
+              "decoded_makespan": 41300,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.0007344250000187458,
+              "utilization": null
+            },
+            "job_count": 30,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 30,
+                "cpu_capacity_term_count": 465,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 465,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 30,
+                "matrix_dimensions": [
+                  30,
+                  30
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 30,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 30
+              },
+              "runtime_seconds": 0.0002725529999452192,
+              "variable_count": 30
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205613.champ1": "r01cn02",
+                "205619.champ1": "r01cn02",
+                "205625.champ1": "r01cn02",
+                "205626.champ1": "r01cn02",
+                "205627.champ1": "r01cn02",
+                "205628.champ1": "r01cn02",
+                "205634.champ1": "r01cn02",
+                "205637.champ1": "r01cn02",
+                "205642.champ1": "r01cn02",
+                "205643.champ1": "r01cn02",
+                "205644.champ1": "r01cn02",
+                "205646.champ1": "r01cn02",
+                "205651.champ1": "r01cn02",
+                "205654.champ1": "r01cn02",
+                "205656.champ1": "r01cn02",
+                "205659.champ1": "r01cn02",
+                "205660.champ1": "r01cn02",
+                "205661.champ1": "r01cn02"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 0.0002621590000444485,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 12,
+                "cpu_violations": 1,
+                "details": [
+                  {
+                    "job_id": "205614.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205622.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205629.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205630.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205632.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205633.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205639.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205649.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205650.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205653.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205655.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205657.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "205613.champ1",
+                      "205619.champ1",
+                      "205625.champ1",
+                      "205626.champ1",
+                      "205627.champ1",
+                      "205628.champ1",
+                      "205634.champ1",
+                      "205637.champ1",
+                      "205642.champ1",
+                      "205643.champ1",
+                      "205644.champ1",
+                      "205646.champ1",
+                      "205651.champ1",
+                      "205654.champ1",
+                      "205656.champ1",
+                      "205659.champ1",
+                      "205660.champ1",
+                      "205661.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "r01cn02",
+                    "type": "cpu_capacity_violation",
+                    "used": 936
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": false
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [],
+      "source_jobs": 30,
+      "source_label": "cpu_30_2",
+      "target_sizes": [
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "benchmarks": [
+        {
+          "label": "gpu_10_3_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 70.0,
+              "brute_force": {
+                "best_energy_feasible_assignment": null,
+                "best_energy_feasible_energy": null,
+                "reference_assignment": {
+                  "205615.champ1": "r04gn05",
+                  "205620.champ1": "r04gn05",
+                  "205621.champ1": "r04gn05",
+                  "205635.champ1": "r04gn05",
+                  "205638.champ1": "r04gn05",
+                  "205640.champ1": "r04gn05",
+                  "205641.champ1": "r04gn05",
+                  "205647.champ1": "r04gn05",
+                  "205652.champ1": "r04gn05",
+                  "205658.champ1": "r04gn05"
+                },
+                "reference_energy_gap": null,
+                "runtime_seconds": 0.0006222239999260637
+              },
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": false,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": 0.0006222239999260637,
+                "cp_sat": 0.00045515899989823083,
+                "qubo_build": 6.151200000203971e-05,
+                "sa": 8.626999999705731e-05
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205615.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205635.champ1": "r04gn05",
+                "205638.champ1": "r04gn05",
+                "205640.champ1": "r04gn05",
+                "205641.champ1": "r04gn05",
+                "205647.champ1": "r04gn05",
+                "205652.champ1": "r04gn05",
+                "205658.champ1": "r04gn05"
+              },
+              "decoded_makespan": 41106,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.00045515899989823083,
+              "utilization": null
+            },
+            "job_count": 10,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 10,
+                "cpu_capacity_term_count": 55,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 55,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  10,
+                  10
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 10,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 10
+              },
+              "runtime_seconds": 6.151200000203971e-05,
+              "variable_count": 10
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205615.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205638.champ1": "r04gn05",
+                "205640.champ1": "r04gn05",
+                "205641.champ1": "r04gn05",
+                "205647.champ1": "r04gn05",
+                "205652.champ1": "r04gn05"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 8.626999999705731e-05,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 3,
+                "cpu_violations": 1,
+                "details": [
+                  {
+                    "job_id": "205621.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205635.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205658.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "205615.champ1",
+                      "205620.champ1",
+                      "205638.champ1",
+                      "205640.champ1",
+                      "205641.champ1",
+                      "205647.champ1",
+                      "205652.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "cpu_capacity_violation",
+                    "used": 154
+                  },
+                  {
+                    "capacity": 4,
+                    "jobs": [
+                      "205615.champ1",
+                      "205620.champ1",
+                      "205638.champ1",
+                      "205640.champ1",
+                      "205641.champ1",
+                      "205647.champ1",
+                      "205652.champ1"
+                    ],
+                    "message": "Assigned GPU demand exceeds node GPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "gpu_capacity_violation",
+                    "used": 13
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 1,
+                "valid": false
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [
+        20,
+        30
+      ],
+      "source_jobs": 10,
+      "source_label": "gpu_10_3",
+      "target_sizes": [
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "benchmarks": [
+        {
+          "label": "gpu_20_4_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 70.0,
+              "brute_force": {
+                "best_energy_feasible_assignment": null,
+                "best_energy_feasible_energy": null,
+                "reference_assignment": {
+                  "205615.champ1": "r04gn05",
+                  "205620.champ1": "r04gn05",
+                  "205621.champ1": "r04gn05",
+                  "205635.champ1": "r04gn05",
+                  "205638.champ1": "r04gn05",
+                  "205640.champ1": "r04gn05",
+                  "205641.champ1": "r04gn05",
+                  "205647.champ1": "r04gn05",
+                  "205652.champ1": "r04gn05",
+                  "205658.champ1": "r04gn05"
+                },
+                "reference_energy_gap": null,
+                "runtime_seconds": 0.0006031800000982912
+              },
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": false,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": 0.0006031800000982912,
+                "cp_sat": 0.000488049999944451,
+                "qubo_build": 6.086700000196288e-05,
+                "sa": 9.050300002400036e-05
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205615.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205635.champ1": "r04gn05",
+                "205638.champ1": "r04gn05",
+                "205640.champ1": "r04gn05",
+                "205641.champ1": "r04gn05",
+                "205647.champ1": "r04gn05",
+                "205652.champ1": "r04gn05",
+                "205658.champ1": "r04gn05"
+              },
+              "decoded_makespan": 41106,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.000488049999944451,
+              "utilization": null
+            },
+            "job_count": 10,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 10,
+                "cpu_capacity_term_count": 55,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 55,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  10,
+                  10
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 10,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 10
+              },
+              "runtime_seconds": 6.086700000196288e-05,
+              "variable_count": 10
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205615.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205638.champ1": "r04gn05",
+                "205640.champ1": "r04gn05",
+                "205641.champ1": "r04gn05",
+                "205647.champ1": "r04gn05",
+                "205652.champ1": "r04gn05"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 9.050300002400036e-05,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 3,
+                "cpu_violations": 1,
+                "details": [
+                  {
+                    "job_id": "205621.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205635.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205658.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "205615.champ1",
+                      "205620.champ1",
+                      "205638.champ1",
+                      "205640.champ1",
+                      "205641.champ1",
+                      "205647.champ1",
+                      "205652.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "cpu_capacity_violation",
+                    "used": 154
+                  },
+                  {
+                    "capacity": 4,
+                    "jobs": [
+                      "205615.champ1",
+                      "205620.champ1",
+                      "205638.champ1",
+                      "205640.champ1",
+                      "205641.champ1",
+                      "205647.champ1",
+                      "205652.champ1"
+                    ],
+                    "message": "Assigned GPU demand exceeds node GPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "gpu_capacity_violation",
+                    "used": 13
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 1,
+                "valid": false
+              }
+            }
+          }
+        },
+        {
+          "label": "gpu_20_4_20_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 65.0,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.0010622190000049159,
+                "qubo_build": 0.00013721100003749598,
+                "sa": 0.00015973999995821941
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205615.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205635.champ1": "r04gn05",
+                "205638.champ1": "r04gn05",
+                "205640.champ1": "r04gn05",
+                "205641.champ1": "r04gn05",
+                "205647.champ1": "r04gn05",
+                "205652.champ1": "r04gn05",
+                "205658.champ1": "r04gn05",
+                "205696.champ1": "r04gn05",
+                "205697.champ1": "r04gn05",
+                "205698.champ1": "r04gn05",
+                "205699.champ1": "r04gn05",
+                "205723.champ1": "r04gn05",
+                "205724.champ1": "r04gn05",
+                "205725.champ1": "r04gn05",
+                "205726.champ1": "r04gn05",
+                "205765.champ1": "r04gn05",
+                "205766.champ1": "r04gn05"
+              },
+              "decoded_makespan": 62354,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.0010622190000049159,
+              "utilization": null
+            },
+            "job_count": 20,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 20,
+                "cpu_capacity_term_count": 210,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 210,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 20,
+                "matrix_dimensions": [
+                  20,
+                  20
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 20,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 20
+              },
+              "runtime_seconds": 0.00013721100003749598,
+              "variable_count": 20
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205615.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205638.champ1": "r04gn05",
+                "205640.champ1": "r04gn05",
+                "205641.champ1": "r04gn05",
+                "205647.champ1": "r04gn05",
+                "205652.champ1": "r04gn05",
+                "205658.champ1": "r04gn05",
+                "205699.champ1": "r04gn05",
+                "205724.champ1": "r04gn05",
+                "205725.champ1": "r04gn05",
+                "205765.champ1": "r04gn05"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 0.00015973999995821941,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 7,
+                "cpu_violations": 1,
+                "details": [
+                  {
+                    "job_id": "205635.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205696.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205697.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205698.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205723.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205726.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205766.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "205615.champ1",
+                      "205620.champ1",
+                      "205621.champ1",
+                      "205638.champ1",
+                      "205640.champ1",
+                      "205641.champ1",
+                      "205647.champ1",
+                      "205652.champ1",
+                      "205658.champ1",
+                      "205699.champ1",
+                      "205724.champ1",
+                      "205725.champ1",
+                      "205765.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "cpu_capacity_violation",
+                    "used": 181
+                  },
+                  {
+                    "capacity": 4,
+                    "jobs": [
+                      "205615.champ1",
+                      "205620.champ1",
+                      "205621.champ1",
+                      "205638.champ1",
+                      "205640.champ1",
+                      "205641.champ1",
+                      "205647.champ1",
+                      "205652.champ1",
+                      "205658.champ1",
+                      "205699.champ1",
+                      "205724.champ1",
+                      "205725.champ1",
+                      "205765.champ1"
+                    ],
+                    "message": "Assigned GPU demand exceeds node GPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "gpu_capacity_violation",
+                    "used": 22
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 1,
+                "valid": false
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [
+        30
+      ],
+      "source_jobs": 20,
+      "source_label": "gpu_20_4",
+      "target_sizes": [
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "benchmarks": [
+        {
+          "label": "gpu_30_5_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 70.0,
+              "brute_force": {
+                "best_energy_feasible_assignment": null,
+                "best_energy_feasible_energy": null,
+                "reference_assignment": {
+                  "205615.champ1": "r04gn05",
+                  "205620.champ1": "r04gn05",
+                  "205621.champ1": "r04gn05",
+                  "205635.champ1": "r04gn05",
+                  "205638.champ1": "r04gn05",
+                  "205640.champ1": "r04gn05",
+                  "205641.champ1": "r04gn05",
+                  "205647.champ1": "r04gn05",
+                  "205652.champ1": "r04gn05",
+                  "205658.champ1": "r04gn05"
+                },
+                "reference_energy_gap": null,
+                "runtime_seconds": 0.0005941420000681319
+              },
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": false,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": 0.0005941420000681319,
+                "cp_sat": 0.00042867799993473454,
+                "qubo_build": 6.110699996497715e-05,
+                "sa": 9.336899995560088e-05
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205615.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205635.champ1": "r04gn05",
+                "205638.champ1": "r04gn05",
+                "205640.champ1": "r04gn05",
+                "205641.champ1": "r04gn05",
+                "205647.champ1": "r04gn05",
+                "205652.champ1": "r04gn05",
+                "205658.champ1": "r04gn05"
+              },
+              "decoded_makespan": 41106,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.00042867799993473454,
+              "utilization": null
+            },
+            "job_count": 10,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 10,
+                "cpu_capacity_term_count": 55,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 55,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  10,
+                  10
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 10,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 10
+              },
+              "runtime_seconds": 6.110699996497715e-05,
+              "variable_count": 10
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205615.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205638.champ1": "r04gn05",
+                "205640.champ1": "r04gn05",
+                "205641.champ1": "r04gn05",
+                "205647.champ1": "r04gn05",
+                "205652.champ1": "r04gn05"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 9.336899995560088e-05,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 3,
+                "cpu_violations": 1,
+                "details": [
+                  {
+                    "job_id": "205621.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205635.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205658.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "205615.champ1",
+                      "205620.champ1",
+                      "205638.champ1",
+                      "205640.champ1",
+                      "205641.champ1",
+                      "205647.champ1",
+                      "205652.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "cpu_capacity_violation",
+                    "used": 154
+                  },
+                  {
+                    "capacity": 4,
+                    "jobs": [
+                      "205615.champ1",
+                      "205620.champ1",
+                      "205638.champ1",
+                      "205640.champ1",
+                      "205641.champ1",
+                      "205647.champ1",
+                      "205652.champ1"
+                    ],
+                    "message": "Assigned GPU demand exceeds node GPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "gpu_capacity_violation",
+                    "used": 13
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 1,
+                "valid": false
+              }
+            }
+          }
+        },
+        {
+          "label": "gpu_30_5_20_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 65.0,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.0005948809999836158,
+                "qubo_build": 0.00013707799996609538,
+                "sa": 0.00015843299991047388
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205615.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205635.champ1": "r04gn05",
+                "205638.champ1": "r04gn05",
+                "205640.champ1": "r04gn05",
+                "205641.champ1": "r04gn05",
+                "205647.champ1": "r04gn05",
+                "205652.champ1": "r04gn05",
+                "205658.champ1": "r04gn05",
+                "205696.champ1": "r04gn05",
+                "205697.champ1": "r04gn05",
+                "205698.champ1": "r04gn05",
+                "205699.champ1": "r04gn05",
+                "205723.champ1": "r04gn05",
+                "205724.champ1": "r04gn05",
+                "205725.champ1": "r04gn05",
+                "205726.champ1": "r04gn05",
+                "205765.champ1": "r04gn05",
+                "205766.champ1": "r04gn05"
+              },
+              "decoded_makespan": 62354,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.0005948809999836158,
+              "utilization": null
+            },
+            "job_count": 20,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 20,
+                "cpu_capacity_term_count": 210,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 210,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 20,
+                "matrix_dimensions": [
+                  20,
+                  20
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 20,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 20
+              },
+              "runtime_seconds": 0.00013707799996609538,
+              "variable_count": 20
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205615.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205638.champ1": "r04gn05",
+                "205640.champ1": "r04gn05",
+                "205641.champ1": "r04gn05",
+                "205647.champ1": "r04gn05",
+                "205652.champ1": "r04gn05",
+                "205658.champ1": "r04gn05",
+                "205699.champ1": "r04gn05",
+                "205724.champ1": "r04gn05",
+                "205725.champ1": "r04gn05",
+                "205765.champ1": "r04gn05"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 0.00015843299991047388,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 7,
+                "cpu_violations": 1,
+                "details": [
+                  {
+                    "job_id": "205635.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205696.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205697.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205698.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205723.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205726.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205766.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "205615.champ1",
+                      "205620.champ1",
+                      "205621.champ1",
+                      "205638.champ1",
+                      "205640.champ1",
+                      "205641.champ1",
+                      "205647.champ1",
+                      "205652.champ1",
+                      "205658.champ1",
+                      "205699.champ1",
+                      "205724.champ1",
+                      "205725.champ1",
+                      "205765.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "cpu_capacity_violation",
+                    "used": 181
+                  },
+                  {
+                    "capacity": 4,
+                    "jobs": [
+                      "205615.champ1",
+                      "205620.champ1",
+                      "205621.champ1",
+                      "205638.champ1",
+                      "205640.champ1",
+                      "205641.champ1",
+                      "205647.champ1",
+                      "205652.champ1",
+                      "205658.champ1",
+                      "205699.champ1",
+                      "205724.champ1",
+                      "205725.champ1",
+                      "205765.champ1"
+                    ],
+                    "message": "Assigned GPU demand exceeds node GPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "gpu_capacity_violation",
+                    "used": 22
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 1,
+                "valid": false
+              }
+            }
+          }
+        },
+        {
+          "label": "gpu_30_5_30_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 60.0,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.0006385840000575627,
+                "qubo_build": 0.0002807500000017171,
+                "sa": 0.0002424460000156614
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205615.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205635.champ1": "r04gn05",
+                "205638.champ1": "r04gn05",
+                "205640.champ1": "r04gn05",
+                "205641.champ1": "r04gn05",
+                "205647.champ1": "r04gn05",
+                "205652.champ1": "r04gn05",
+                "205658.champ1": "r04gn05",
+                "205696.champ1": "r04gn05",
+                "205697.champ1": "r04gn05",
+                "205698.champ1": "r04gn05",
+                "205699.champ1": "r04gn05",
+                "205723.champ1": "r04gn05",
+                "205724.champ1": "r04gn05",
+                "205725.champ1": "r04gn05",
+                "205726.champ1": "r04gn05",
+                "205765.champ1": "r04gn05",
+                "205766.champ1": "r04gn05",
+                "205767.champ1": "r04gn05",
+                "205768.champ1": "r04gn05",
+                "205770.champ1": "r04gn05",
+                "205771.champ1": "r04gn05",
+                "205774.champ1": "r04gn05",
+                "205777.champ1": "r04gn05",
+                "205779.champ1": "r04gn05",
+                "205781.champ1": "r04gn05",
+                "205782.champ1": "r04gn05",
+                "205784.champ1": "r04gn05"
+              },
+              "decoded_makespan": 65281,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.0006385840000575627,
+              "utilization": null
+            },
+            "job_count": 30,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 30,
+                "cpu_capacity_term_count": 465,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 465,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 30,
+                "matrix_dimensions": [
+                  30,
+                  30
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 30,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 30
+              },
+              "runtime_seconds": 0.0002807500000017171,
+              "variable_count": 30
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205615.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205638.champ1": "r04gn05",
+                "205640.champ1": "r04gn05",
+                "205641.champ1": "r04gn05",
+                "205647.champ1": "r04gn05",
+                "205698.champ1": "r04gn05",
+                "205699.champ1": "r04gn05",
+                "205724.champ1": "r04gn05",
+                "205725.champ1": "r04gn05",
+                "205726.champ1": "r04gn05",
+                "205765.champ1": "r04gn05",
+                "205768.champ1": "r04gn05",
+                "205771.champ1": "r04gn05",
+                "205777.champ1": "r04gn05",
+                "205781.champ1": "r04gn05",
+                "205782.champ1": "r04gn05",
+                "205784.champ1": "r04gn05"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 0.0002424460000156614,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 12,
+                "cpu_violations": 1,
+                "details": [
+                  {
+                    "job_id": "205620.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205635.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205652.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205658.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205696.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205697.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205723.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205766.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205767.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205770.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205774.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205779.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "205615.champ1",
+                      "205621.champ1",
+                      "205638.champ1",
+                      "205640.champ1",
+                      "205641.champ1",
+                      "205647.champ1",
+                      "205698.champ1",
+                      "205699.champ1",
+                      "205724.champ1",
+                      "205725.champ1",
+                      "205726.champ1",
+                      "205765.champ1",
+                      "205768.champ1",
+                      "205771.champ1",
+                      "205777.champ1",
+                      "205781.champ1",
+                      "205782.champ1",
+                      "205784.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "cpu_capacity_violation",
+                    "used": 697
+                  },
+                  {
+                    "capacity": 4,
+                    "jobs": [
+                      "205615.champ1",
+                      "205621.champ1",
+                      "205638.champ1",
+                      "205640.champ1",
+                      "205641.champ1",
+                      "205647.champ1",
+                      "205698.champ1",
+                      "205699.champ1",
+                      "205724.champ1",
+                      "205725.champ1",
+                      "205726.champ1",
+                      "205765.champ1",
+                      "205768.champ1",
+                      "205771.champ1",
+                      "205777.champ1",
+                      "205781.champ1",
+                      "205782.champ1",
+                      "205784.champ1"
+                    ],
+                    "message": "Assigned GPU demand exceeds node GPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "gpu_capacity_violation",
+                    "used": 39
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 1,
+                "valid": false
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [],
+      "source_jobs": 30,
+      "source_label": "gpu_30_5",
+      "target_sizes": [
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "benchmarks": [
+        {
+          "label": "mixed_10_6_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 70.0,
+              "brute_force": {
+                "best_energy_feasible_assignment": null,
+                "best_energy_feasible_energy": null,
+                "reference_assignment": {
+                  "205613.champ1": "r04gn05",
+                  "205614.champ1": "r04gn05",
+                  "205615.champ1": "r04gn05",
+                  "205619.champ1": "r04gn05",
+                  "205620.champ1": "r04gn05",
+                  "205621.champ1": "r04gn05",
+                  "205622.champ1": "r04gn05",
+                  "205625.champ1": "r04gn05",
+                  "205626.champ1": "r04gn05",
+                  "205627.champ1": "r04gn05"
+                },
+                "reference_energy_gap": null,
+                "runtime_seconds": 0.0005835179999849061
+              },
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": false,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": 0.0005835179999849061,
+                "cp_sat": 0.00047856900005172065,
+                "qubo_build": 6.33670000524944e-05,
+                "sa": 8.908500001325592e-05
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205613.champ1": "r04gn05",
+                "205614.champ1": "r04gn05",
+                "205615.champ1": "r04gn05",
+                "205619.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205622.champ1": "r04gn05",
+                "205625.champ1": "r04gn05",
+                "205626.champ1": "r04gn05",
+                "205627.champ1": "r04gn05"
+              },
+              "decoded_makespan": 25374,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.00047856900005172065,
+              "utilization": null
+            },
+            "job_count": 10,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 10,
+                "cpu_capacity_term_count": 55,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 55,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  10,
+                  10
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 10,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 10
+              },
+              "runtime_seconds": 6.33670000524944e-05,
+              "variable_count": 10
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205613.champ1": "r04gn05",
+                "205614.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205622.champ1": "r04gn05",
+                "205625.champ1": "r04gn05",
+                "205626.champ1": "r04gn05"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 8.908500001325592e-05,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 3,
+                "cpu_violations": 0,
+                "details": [
+                  {
+                    "job_id": "205615.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205619.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205627.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "capacity": 4,
+                    "jobs": [
+                      "205613.champ1",
+                      "205614.champ1",
+                      "205620.champ1",
+                      "205621.champ1",
+                      "205622.champ1",
+                      "205625.champ1",
+                      "205626.champ1"
+                    ],
+                    "message": "Assigned GPU demand exceeds node GPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "gpu_capacity_violation",
+                    "used": 5
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 1,
+                "valid": false
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [
+        20,
+        30
+      ],
+      "source_jobs": 10,
+      "source_label": "mixed_10_6",
+      "target_sizes": [
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "benchmarks": [
+        {
+          "label": "mixed_20_7_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 70.0,
+              "brute_force": {
+                "best_energy_feasible_assignment": null,
+                "best_energy_feasible_energy": null,
+                "reference_assignment": {
+                  "205613.champ1": "r04gn05",
+                  "205614.champ1": "r04gn05",
+                  "205615.champ1": "r04gn05",
+                  "205619.champ1": "r04gn05",
+                  "205620.champ1": "r04gn05",
+                  "205621.champ1": "r04gn05",
+                  "205622.champ1": "r04gn05",
+                  "205625.champ1": "r04gn05",
+                  "205626.champ1": "r04gn05",
+                  "205627.champ1": "r04gn05"
+                },
+                "reference_energy_gap": null,
+                "runtime_seconds": 0.0006532789999482702
+              },
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": false,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": 0.0006532789999482702,
+                "cp_sat": 0.0004646730000104071,
+                "qubo_build": 5.98609999542532e-05,
+                "sa": 0.0001009349999776532
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205613.champ1": "r04gn05",
+                "205614.champ1": "r04gn05",
+                "205615.champ1": "r04gn05",
+                "205619.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205622.champ1": "r04gn05",
+                "205625.champ1": "r04gn05",
+                "205626.champ1": "r04gn05",
+                "205627.champ1": "r04gn05"
+              },
+              "decoded_makespan": 25374,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.0004646730000104071,
+              "utilization": null
+            },
+            "job_count": 10,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 10,
+                "cpu_capacity_term_count": 55,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 55,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  10,
+                  10
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 10,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 10
+              },
+              "runtime_seconds": 5.98609999542532e-05,
+              "variable_count": 10
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205613.champ1": "r04gn05",
+                "205614.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205622.champ1": "r04gn05",
+                "205625.champ1": "r04gn05",
+                "205626.champ1": "r04gn05"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 0.0001009349999776532,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 3,
+                "cpu_violations": 0,
+                "details": [
+                  {
+                    "job_id": "205615.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205619.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205627.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "capacity": 4,
+                    "jobs": [
+                      "205613.champ1",
+                      "205614.champ1",
+                      "205620.champ1",
+                      "205621.champ1",
+                      "205622.champ1",
+                      "205625.champ1",
+                      "205626.champ1"
+                    ],
+                    "message": "Assigned GPU demand exceeds node GPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "gpu_capacity_violation",
+                    "used": 5
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 1,
+                "valid": false
+              }
+            }
+          }
+        },
+        {
+          "label": "mixed_20_7_20_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 65.0,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.0005338239999446159,
+                "qubo_build": 0.00014163399998778914,
+                "sa": 0.0001528620000499359
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205613.champ1": "r04gn05",
+                "205614.champ1": "r04gn05",
+                "205615.champ1": "r04gn05",
+                "205619.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205622.champ1": "r04gn05",
+                "205625.champ1": "r04gn05",
+                "205626.champ1": "r04gn05",
+                "205627.champ1": "r04gn05",
+                "205628.champ1": "r04gn05",
+                "205629.champ1": "r04gn05",
+                "205630.champ1": "r04gn05",
+                "205632.champ1": "r04gn05",
+                "205633.champ1": "r04gn05",
+                "205634.champ1": "r04gn05",
+                "205635.champ1": "r04gn05",
+                "205637.champ1": "r04gn05",
+                "205638.champ1": "r04gn05",
+                "205639.champ1": "r04gn05"
+              },
+              "decoded_makespan": 35005,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.0005338239999446159,
+              "utilization": null
+            },
+            "job_count": 20,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 20,
+                "cpu_capacity_term_count": 210,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 210,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 20,
+                "matrix_dimensions": [
+                  20,
+                  20
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 20,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 20
+              },
+              "runtime_seconds": 0.00014163399998778914,
+              "variable_count": 20
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205613.champ1": "r04gn05",
+                "205614.champ1": "r04gn05",
+                "205615.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205622.champ1": "r04gn05",
+                "205625.champ1": "r04gn05",
+                "205626.champ1": "r04gn05",
+                "205627.champ1": "r04gn05",
+                "205632.champ1": "r04gn05",
+                "205634.champ1": "r04gn05",
+                "205635.champ1": "r04gn05",
+                "205638.champ1": "r04gn05"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 0.0001528620000499359,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 7,
+                "cpu_violations": 1,
+                "details": [
+                  {
+                    "job_id": "205619.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205628.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205629.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205630.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205633.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205637.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205639.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "205613.champ1",
+                      "205614.champ1",
+                      "205615.champ1",
+                      "205620.champ1",
+                      "205621.champ1",
+                      "205622.champ1",
+                      "205625.champ1",
+                      "205626.champ1",
+                      "205627.champ1",
+                      "205632.champ1",
+                      "205634.champ1",
+                      "205635.champ1",
+                      "205638.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "cpu_capacity_violation",
+                    "used": 467
+                  },
+                  {
+                    "capacity": 4,
+                    "jobs": [
+                      "205613.champ1",
+                      "205614.champ1",
+                      "205615.champ1",
+                      "205620.champ1",
+                      "205621.champ1",
+                      "205622.champ1",
+                      "205625.champ1",
+                      "205626.champ1",
+                      "205627.champ1",
+                      "205632.champ1",
+                      "205634.champ1",
+                      "205635.champ1",
+                      "205638.champ1"
+                    ],
+                    "message": "Assigned GPU demand exceeds node GPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "gpu_capacity_violation",
+                    "used": 14
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 1,
+                "valid": false
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [
+        30
+      ],
+      "source_jobs": 20,
+      "source_label": "mixed_20_7",
+      "target_sizes": [
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "benchmarks": [
+        {
+          "label": "mixed_30_8_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 70.0,
+              "brute_force": {
+                "best_energy_feasible_assignment": null,
+                "best_energy_feasible_energy": null,
+                "reference_assignment": {
+                  "205613.champ1": "r04gn05",
+                  "205614.champ1": "r04gn05",
+                  "205615.champ1": "r04gn05",
+                  "205619.champ1": "r04gn05",
+                  "205620.champ1": "r04gn05",
+                  "205621.champ1": "r04gn05",
+                  "205622.champ1": "r04gn05",
+                  "205625.champ1": "r04gn05",
+                  "205626.champ1": "r04gn05",
+                  "205627.champ1": "r04gn05"
+                },
+                "reference_energy_gap": null,
+                "runtime_seconds": 0.0007019899999249901
+              },
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": false,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": 0.0007019899999249901,
+                "cp_sat": 0.00041660300007606565,
+                "qubo_build": 6.043100006536406e-05,
+                "sa": 9.055099997112848e-05
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205613.champ1": "r04gn05",
+                "205614.champ1": "r04gn05",
+                "205615.champ1": "r04gn05",
+                "205619.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205622.champ1": "r04gn05",
+                "205625.champ1": "r04gn05",
+                "205626.champ1": "r04gn05",
+                "205627.champ1": "r04gn05"
+              },
+              "decoded_makespan": 25374,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.00041660300007606565,
+              "utilization": null
+            },
+            "job_count": 10,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 10,
+                "cpu_capacity_term_count": 55,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 55,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  10,
+                  10
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 10,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 10
+              },
+              "runtime_seconds": 6.043100006536406e-05,
+              "variable_count": 10
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205613.champ1": "r04gn05",
+                "205614.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205622.champ1": "r04gn05",
+                "205625.champ1": "r04gn05",
+                "205626.champ1": "r04gn05"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 9.055099997112848e-05,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 3,
+                "cpu_violations": 0,
+                "details": [
+                  {
+                    "job_id": "205615.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205619.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205627.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "capacity": 4,
+                    "jobs": [
+                      "205613.champ1",
+                      "205614.champ1",
+                      "205620.champ1",
+                      "205621.champ1",
+                      "205622.champ1",
+                      "205625.champ1",
+                      "205626.champ1"
+                    ],
+                    "message": "Assigned GPU demand exceeds node GPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "gpu_capacity_violation",
+                    "used": 5
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 1,
+                "valid": false
+              }
+            }
+          }
+        },
+        {
+          "label": "mixed_30_8_20_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 65.0,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.0005569300000161093,
+                "qubo_build": 0.00017703600008189824,
+                "sa": 0.00015764099998705206
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205613.champ1": "r04gn05",
+                "205614.champ1": "r04gn05",
+                "205615.champ1": "r04gn05",
+                "205619.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205622.champ1": "r04gn05",
+                "205625.champ1": "r04gn05",
+                "205626.champ1": "r04gn05",
+                "205627.champ1": "r04gn05",
+                "205628.champ1": "r04gn05",
+                "205629.champ1": "r04gn05",
+                "205630.champ1": "r04gn05",
+                "205632.champ1": "r04gn05",
+                "205633.champ1": "r04gn05",
+                "205634.champ1": "r04gn05",
+                "205635.champ1": "r04gn05",
+                "205637.champ1": "r04gn05",
+                "205638.champ1": "r04gn05",
+                "205639.champ1": "r04gn05"
+              },
+              "decoded_makespan": 35005,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.0005569300000161093,
+              "utilization": null
+            },
+            "job_count": 20,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 20,
+                "cpu_capacity_term_count": 210,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 210,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 20,
+                "matrix_dimensions": [
+                  20,
+                  20
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 20,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 20
+              },
+              "runtime_seconds": 0.00017703600008189824,
+              "variable_count": 20
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205613.champ1": "r04gn05",
+                "205614.champ1": "r04gn05",
+                "205615.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205622.champ1": "r04gn05",
+                "205625.champ1": "r04gn05",
+                "205626.champ1": "r04gn05",
+                "205627.champ1": "r04gn05",
+                "205632.champ1": "r04gn05",
+                "205634.champ1": "r04gn05",
+                "205635.champ1": "r04gn05",
+                "205638.champ1": "r04gn05"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 0.00015764099998705206,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 7,
+                "cpu_violations": 1,
+                "details": [
+                  {
+                    "job_id": "205619.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205628.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205629.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205630.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205633.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205637.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205639.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "205613.champ1",
+                      "205614.champ1",
+                      "205615.champ1",
+                      "205620.champ1",
+                      "205621.champ1",
+                      "205622.champ1",
+                      "205625.champ1",
+                      "205626.champ1",
+                      "205627.champ1",
+                      "205632.champ1",
+                      "205634.champ1",
+                      "205635.champ1",
+                      "205638.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "cpu_capacity_violation",
+                    "used": 467
+                  },
+                  {
+                    "capacity": 4,
+                    "jobs": [
+                      "205613.champ1",
+                      "205614.champ1",
+                      "205615.champ1",
+                      "205620.champ1",
+                      "205621.champ1",
+                      "205622.champ1",
+                      "205625.champ1",
+                      "205626.champ1",
+                      "205627.champ1",
+                      "205632.champ1",
+                      "205634.champ1",
+                      "205635.champ1",
+                      "205638.champ1"
+                    ],
+                    "message": "Assigned GPU demand exceeds node GPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "gpu_capacity_violation",
+                    "used": 14
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 1,
+                "valid": false
+              }
+            }
+          }
+        },
+        {
+          "label": "mixed_30_8_30_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 60.0,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.0006940519999716344,
+                "qubo_build": 0.0002489060000243626,
+                "sa": 0.00022650100004284468
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "205613.champ1": "r04gn05",
+                "205614.champ1": "r04gn05",
+                "205615.champ1": "r04gn05",
+                "205619.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205622.champ1": "r04gn05",
+                "205625.champ1": "r04gn05",
+                "205626.champ1": "r04gn05",
+                "205627.champ1": "r04gn05",
+                "205628.champ1": "r04gn05",
+                "205629.champ1": "r04gn05",
+                "205630.champ1": "r04gn05",
+                "205632.champ1": "r04gn05",
+                "205633.champ1": "r04gn05",
+                "205634.champ1": "r04gn05",
+                "205635.champ1": "r04gn05",
+                "205637.champ1": "r04gn05",
+                "205638.champ1": "r04gn05",
+                "205639.champ1": "r04gn05",
+                "205640.champ1": "r04gn05",
+                "205641.champ1": "r04gn05",
+                "205642.champ1": "r04gn05",
+                "205643.champ1": "r04gn05",
+                "205644.champ1": "r04gn05",
+                "205646.champ1": "r04gn05",
+                "205647.champ1": "r04gn05",
+                "205649.champ1": "r04gn05",
+                "205650.champ1": "r04gn05",
+                "205651.champ1": "r04gn05"
+              },
+              "decoded_makespan": 39672,
+              "objective_value": 0.0,
+              "runtime_seconds": 0.0006940519999716344,
+              "utilization": null
+            },
+            "job_count": 30,
+            "node_count": 1,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 30,
+                "cpu_capacity_term_count": 465,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 465,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 30,
+                "matrix_dimensions": [
+                  30,
+                  30
+                ],
+                "node_count": 1,
+                "objective_scale": 1.0,
+                "objective_term_count": 30,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 30
+              },
+              "runtime_seconds": 0.0002489060000243626,
+              "variable_count": 30
+            },
+            "sa": {
+              "decoded_assignment": {
+                "205613.champ1": "r04gn05",
+                "205615.champ1": "r04gn05",
+                "205620.champ1": "r04gn05",
+                "205621.champ1": "r04gn05",
+                "205622.champ1": "r04gn05",
+                "205625.champ1": "r04gn05",
+                "205630.champ1": "r04gn05",
+                "205632.champ1": "r04gn05",
+                "205634.champ1": "r04gn05",
+                "205635.champ1": "r04gn05",
+                "205637.champ1": "r04gn05",
+                "205638.champ1": "r04gn05",
+                "205641.champ1": "r04gn05",
+                "205643.champ1": "r04gn05",
+                "205646.champ1": "r04gn05",
+                "205649.champ1": "r04gn05",
+                "205650.champ1": "r04gn05",
+                "205651.champ1": "r04gn05"
+              },
+              "decoded_makespan": null,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 0.00022650100004284468,
+              "utilization": null,
+              "validation": {
+                "assignment_violations": 12,
+                "cpu_violations": 1,
+                "details": [
+                  {
+                    "job_id": "205614.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205619.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205626.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205627.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205628.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205629.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205633.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205639.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205640.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205642.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205644.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "job_id": "205647.champ1",
+                    "message": "Job has no node assignment.",
+                    "type": "missing_assignment"
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "205613.champ1",
+                      "205615.champ1",
+                      "205620.champ1",
+                      "205621.champ1",
+                      "205622.champ1",
+                      "205625.champ1",
+                      "205630.champ1",
+                      "205632.champ1",
+                      "205634.champ1",
+                      "205635.champ1",
+                      "205637.champ1",
+                      "205638.champ1",
+                      "205641.champ1",
+                      "205643.champ1",
+                      "205646.champ1",
+                      "205649.champ1",
+                      "205650.champ1",
+                      "205651.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "cpu_capacity_violation",
+                    "used": 635
+                  },
+                  {
+                    "capacity": 4,
+                    "jobs": [
+                      "205613.champ1",
+                      "205615.champ1",
+                      "205620.champ1",
+                      "205621.champ1",
+                      "205622.champ1",
+                      "205625.champ1",
+                      "205630.champ1",
+                      "205632.champ1",
+                      "205634.champ1",
+                      "205635.champ1",
+                      "205637.champ1",
+                      "205638.champ1",
+                      "205641.champ1",
+                      "205643.champ1",
+                      "205646.champ1",
+                      "205649.champ1",
+                      "205650.champ1",
+                      "205651.champ1"
+                    ],
+                    "message": "Assigned GPU demand exceeds node GPU capacity.",
+                    "node_id": "r04gn05",
+                    "type": "gpu_capacity_violation",
+                    "used": 15
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 1,
+                "valid": false
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [],
+      "source_jobs": 30,
+      "source_label": "mixed_30_8",
+      "target_sizes": [
+        10,
+        20,
+        30
+      ]
+    }
+  ]
+}

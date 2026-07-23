@@ -1,0 +1,2 @@
+category,jobs,feasible,makespan,runtime_seconds,assignment_overlap,cp_sat_runtime_seconds
+cpu_10_0,10,True,3228,0.0010183270001107303,0.0,0.0026020760001301824

@@ -1,0 +1,2412 @@
+{
+  "benchmarks": [
+    {
+      "benchmarks": [
+        {
+          "label": "cpu-only_10_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 33.333333333333336,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.023080413000116096,
+                "qubo_build": 0.4945561679999173,
+                "sa": 37.05474118500001
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "100011.champ1": "gpu-011",
+                "100012.champ1": "gpu-011",
+                "100017.champ1": "gpu-011",
+                "100018.champ1": "gpu-011",
+                "100020.champ1": "gpu-011",
+                "100022.champ1": "gpu-011"
+              },
+              "decoded_makespan": 10341,
+              "objective_value": 24.477272727272727,
+              "runtime_seconds": 0.023080413000116096,
+              "utilization": 0.3124456048738033
+            },
+            "job_count": 10,
+            "node_count": 422,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 892530,
+                "cpu_capacity_term_count": 23210,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 23210,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  4220,
+                  4220
+                ],
+                "node_count": 422,
+                "objective_scale": 1.0,
+                "objective_term_count": 4220,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 4220
+              },
+              "runtime_seconds": 0.4945561679999173,
+              "variable_count": 4220
+            },
+            "sa": {
+              "decoded_assignment": {
+                "100006.champ1": "gpu-011",
+                "100008.champ1": "gpu-009",
+                "100009.champ1": "gpu-011",
+                "100010.champ1": "gpu-009",
+                "100011.champ1": "gpu-011",
+                "100012.champ1": "gpu-009",
+                "100017.champ1": "gpu-011",
+                "100018.champ1": "gpu-010",
+                "100020.champ1": "gpu-010",
+                "100022.champ1": "gpu-009"
+              },
+              "decoded_makespan": 208227,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 37.05474118500001,
+              "utilization": 1.2111781853458006,
+              "validation": {
+                "assignment_violations": 0,
+                "cpu_violations": 3,
+                "details": [
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100008.champ1",
+                      "100010.champ1",
+                      "100012.champ1",
+                      "100022.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-009",
+                    "type": "cpu_capacity_violation",
+                    "used": 320
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100018.champ1",
+                      "100020.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-010",
+                    "type": "cpu_capacity_violation",
+                    "used": 256
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100006.champ1",
+                      "100009.champ1",
+                      "100011.champ1",
+                      "100017.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-011",
+                    "type": "cpu_capacity_violation",
+                    "used": 384
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": false
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [
+        20,
+        30
+      ],
+      "source_jobs": 10,
+      "source_label": "cpu-only_10",
+      "target_sizes": [
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "benchmarks": [
+        {
+          "label": "cpu-only_20_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 33.333333333333336,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.023049427000159994,
+                "qubo_build": 0.4961944140000014,
+                "sa": 37.03206659900002
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "100011.champ1": "gpu-011",
+                "100012.champ1": "gpu-011",
+                "100017.champ1": "gpu-011",
+                "100018.champ1": "gpu-011",
+                "100020.champ1": "gpu-011",
+                "100022.champ1": "gpu-011"
+              },
+              "decoded_makespan": 10341,
+              "objective_value": 24.477272727272727,
+              "runtime_seconds": 0.023049427000159994,
+              "utilization": 0.3124456048738033
+            },
+            "job_count": 10,
+            "node_count": 422,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 892530,
+                "cpu_capacity_term_count": 23210,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 23210,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  4220,
+                  4220
+                ],
+                "node_count": 422,
+                "objective_scale": 1.0,
+                "objective_term_count": 4220,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 4220
+              },
+              "runtime_seconds": 0.4961944140000014,
+              "variable_count": 4220
+            },
+            "sa": {
+              "decoded_assignment": {
+                "100006.champ1": "gpu-011",
+                "100008.champ1": "gpu-009",
+                "100009.champ1": "gpu-011",
+                "100010.champ1": "gpu-009",
+                "100011.champ1": "gpu-011",
+                "100012.champ1": "gpu-009",
+                "100017.champ1": "gpu-011",
+                "100018.champ1": "gpu-010",
+                "100020.champ1": "gpu-010",
+                "100022.champ1": "gpu-009"
+              },
+              "decoded_makespan": 208227,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 37.03206659900002,
+              "utilization": 1.2111781853458006,
+              "validation": {
+                "assignment_violations": 0,
+                "cpu_violations": 3,
+                "details": [
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100008.champ1",
+                      "100010.champ1",
+                      "100012.champ1",
+                      "100022.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-009",
+                    "type": "cpu_capacity_violation",
+                    "used": 320
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100018.champ1",
+                      "100020.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-010",
+                    "type": "cpu_capacity_violation",
+                    "used": 256
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100006.champ1",
+                      "100009.champ1",
+                      "100011.champ1",
+                      "100017.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-011",
+                    "type": "cpu_capacity_violation",
+                    "used": 384
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": false
+              }
+            }
+          }
+        },
+        {
+          "label": "cpu-only_20_20_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 53.333333333333336,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.05830789599986019,
+                "qubo_build": 1.7757991810001386,
+                "sa": 150.54949974300007
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "100011.champ1": "gpu-011",
+                "100012.champ1": "gpu-011",
+                "100017.champ1": "gpu-011",
+                "100018.champ1": "gpu-011",
+                "100020.champ1": "gpu-011",
+                "100022.champ1": "gpu-011",
+                "100024.champ1": "gpu-011",
+                "100031.champ1": "gpu-011",
+                "100032.champ1": "gpu-011",
+                "100059.champ1": "gpu-011",
+                "100060.champ1": "gpu-011",
+                "100063.champ1": "gpu-011",
+                "100064.champ1": "gpu-011",
+                "100065.champ1": "gpu-011",
+                "100068.champ1": "gpu-011"
+              },
+              "decoded_makespan": 24493,
+              "objective_value": 56.93939393939395,
+              "runtime_seconds": 0.05830789599986019,
+              "utilization": 0.3068631853999102
+            },
+            "job_count": 20,
+            "node_count": 422,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 1785060,
+                "cpu_capacity_term_count": 88620,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 88620,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 20,
+                "matrix_dimensions": [
+                  8440,
+                  8440
+                ],
+                "node_count": 422,
+                "objective_scale": 1.0,
+                "objective_term_count": 8440,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 8440
+              },
+              "runtime_seconds": 1.7757991810001386,
+              "variable_count": 8440
+            },
+            "sa": {
+              "decoded_assignment": {
+                "100006.champ1": "gpu-008",
+                "100008.champ1": "gpu-011",
+                "100009.champ1": "gpu-011",
+                "100010.champ1": "gpu-009",
+                "100011.champ1": "gpu-011",
+                "100012.champ1": "gpu-008",
+                "100017.champ1": "gpu-010",
+                "100018.champ1": "gpu-008",
+                "100020.champ1": "gpu-011",
+                "100022.champ1": "gpu-008",
+                "100024.champ1": "gpu-008",
+                "100031.champ1": "gpu-011",
+                "100032.champ1": "gpu-009",
+                "100057.champ1": "gpu-011",
+                "100059.champ1": "gpu-011",
+                "100060.champ1": "gpu-011",
+                "100063.champ1": "gpu-011",
+                "100064.champ1": "gpu-009",
+                "100065.champ1": "gpu-011",
+                "100068.champ1": "gpu-011"
+              },
+              "decoded_makespan": 180346,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 150.54949974300007,
+              "utilization": 1.5021236955629733,
+              "validation": {
+                "assignment_violations": 0,
+                "cpu_violations": 3,
+                "details": [
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100006.champ1",
+                      "100012.champ1",
+                      "100018.champ1",
+                      "100022.champ1",
+                      "100024.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-008",
+                    "type": "cpu_capacity_violation",
+                    "used": 608
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100010.champ1",
+                      "100032.champ1",
+                      "100064.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-009",
+                    "type": "cpu_capacity_violation",
+                    "used": 288
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100008.champ1",
+                      "100009.champ1",
+                      "100011.champ1",
+                      "100020.champ1",
+                      "100031.champ1",
+                      "100057.champ1",
+                      "100059.champ1",
+                      "100060.champ1",
+                      "100063.champ1",
+                      "100065.champ1",
+                      "100068.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-011",
+                    "type": "cpu_capacity_violation",
+                    "used": 1120
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": false
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [
+        30
+      ],
+      "source_jobs": 20,
+      "source_label": "cpu-only_20",
+      "target_sizes": [
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "benchmarks": [
+        {
+          "label": "cpu-only_30_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 33.333333333333336,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.06308593800031304,
+                "qubo_build": 0.4786451820000366,
+                "sa": 37.06170539300001
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "100011.champ1": "gpu-011",
+                "100012.champ1": "gpu-011",
+                "100017.champ1": "gpu-011",
+                "100018.champ1": "gpu-011",
+                "100020.champ1": "gpu-011",
+                "100022.champ1": "gpu-011"
+              },
+              "decoded_makespan": 10341,
+              "objective_value": 24.477272727272727,
+              "runtime_seconds": 0.06308593800031304,
+              "utilization": 0.3124456048738033
+            },
+            "job_count": 10,
+            "node_count": 422,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 892530,
+                "cpu_capacity_term_count": 23210,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 23210,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  4220,
+                  4220
+                ],
+                "node_count": 422,
+                "objective_scale": 1.0,
+                "objective_term_count": 4220,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 4220
+              },
+              "runtime_seconds": 0.4786451820000366,
+              "variable_count": 4220
+            },
+            "sa": {
+              "decoded_assignment": {
+                "100006.champ1": "gpu-011",
+                "100008.champ1": "gpu-009",
+                "100009.champ1": "gpu-011",
+                "100010.champ1": "gpu-009",
+                "100011.champ1": "gpu-011",
+                "100012.champ1": "gpu-009",
+                "100017.champ1": "gpu-011",
+                "100018.champ1": "gpu-010",
+                "100020.champ1": "gpu-010",
+                "100022.champ1": "gpu-009"
+              },
+              "decoded_makespan": 208227,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 37.06170539300001,
+              "utilization": 1.2111781853458006,
+              "validation": {
+                "assignment_violations": 0,
+                "cpu_violations": 3,
+                "details": [
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100008.champ1",
+                      "100010.champ1",
+                      "100012.champ1",
+                      "100022.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-009",
+                    "type": "cpu_capacity_violation",
+                    "used": 320
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100018.champ1",
+                      "100020.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-010",
+                    "type": "cpu_capacity_violation",
+                    "used": 256
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100006.champ1",
+                      "100009.champ1",
+                      "100011.champ1",
+                      "100017.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-011",
+                    "type": "cpu_capacity_violation",
+                    "used": 384
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": false
+              }
+            }
+          }
+        },
+        {
+          "label": "cpu-only_30_20_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 53.333333333333336,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.19324223199964763,
+                "qubo_build": 1.5382152119996135,
+                "sa": 148.91654549000032
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "100011.champ1": "gpu-011",
+                "100012.champ1": "gpu-011",
+                "100017.champ1": "gpu-011",
+                "100018.champ1": "gpu-011",
+                "100020.champ1": "gpu-011",
+                "100022.champ1": "gpu-011",
+                "100024.champ1": "gpu-011",
+                "100031.champ1": "gpu-011",
+                "100032.champ1": "gpu-011",
+                "100059.champ1": "gpu-011",
+                "100060.champ1": "gpu-011",
+                "100063.champ1": "gpu-011",
+                "100064.champ1": "gpu-011",
+                "100065.champ1": "gpu-011",
+                "100068.champ1": "gpu-011"
+              },
+              "decoded_makespan": 24493,
+              "objective_value": 56.93939393939395,
+              "runtime_seconds": 0.19324223199964763,
+              "utilization": 0.3068631853999102
+            },
+            "job_count": 20,
+            "node_count": 422,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 1785060,
+                "cpu_capacity_term_count": 88620,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 88620,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 20,
+                "matrix_dimensions": [
+                  8440,
+                  8440
+                ],
+                "node_count": 422,
+                "objective_scale": 1.0,
+                "objective_term_count": 8440,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 8440
+              },
+              "runtime_seconds": 1.5382152119996135,
+              "variable_count": 8440
+            },
+            "sa": {
+              "decoded_assignment": {
+                "100006.champ1": "gpu-008",
+                "100008.champ1": "gpu-011",
+                "100009.champ1": "gpu-011",
+                "100010.champ1": "gpu-009",
+                "100011.champ1": "gpu-011",
+                "100012.champ1": "gpu-008",
+                "100017.champ1": "gpu-010",
+                "100018.champ1": "gpu-008",
+                "100020.champ1": "gpu-011",
+                "100022.champ1": "gpu-008",
+                "100024.champ1": "gpu-008",
+                "100031.champ1": "gpu-011",
+                "100032.champ1": "gpu-009",
+                "100057.champ1": "gpu-011",
+                "100059.champ1": "gpu-011",
+                "100060.champ1": "gpu-011",
+                "100063.champ1": "gpu-011",
+                "100064.champ1": "gpu-009",
+                "100065.champ1": "gpu-011",
+                "100068.champ1": "gpu-011"
+              },
+              "decoded_makespan": 180346,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 148.91654549000032,
+              "utilization": 1.5021236955629733,
+              "validation": {
+                "assignment_violations": 0,
+                "cpu_violations": 3,
+                "details": [
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100006.champ1",
+                      "100012.champ1",
+                      "100018.champ1",
+                      "100022.champ1",
+                      "100024.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-008",
+                    "type": "cpu_capacity_violation",
+                    "used": 608
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100010.champ1",
+                      "100032.champ1",
+                      "100064.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-009",
+                    "type": "cpu_capacity_violation",
+                    "used": 288
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100008.champ1",
+                      "100009.champ1",
+                      "100011.champ1",
+                      "100020.champ1",
+                      "100031.champ1",
+                      "100057.champ1",
+                      "100059.champ1",
+                      "100060.champ1",
+                      "100063.champ1",
+                      "100065.champ1",
+                      "100068.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-011",
+                    "type": "cpu_capacity_violation",
+                    "used": 1120
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": false
+              }
+            }
+          }
+        },
+        {
+          "label": "cpu-only_30_30_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 52.0,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.2832768980001674,
+                "qubo_build": 3.441721617999974,
+                "sa": 345.74169841899993
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "100011.champ1": "gpu-011",
+                "100012.champ1": "gpu-011",
+                "100017.champ1": "gpu-011",
+                "100018.champ1": "gpu-011",
+                "100020.champ1": "gpu-011",
+                "100022.champ1": "gpu-011",
+                "100024.champ1": "gpu-011",
+                "100031.champ1": "gpu-011",
+                "100032.champ1": "gpu-011",
+                "100059.champ1": "gpu-011",
+                "100060.champ1": "gpu-011",
+                "100063.champ1": "gpu-011",
+                "100064.champ1": "gpu-011",
+                "100065.champ1": "gpu-011",
+                "100068.champ1": "gpu-011",
+                "100070.champ1": "gpu-011",
+                "100075.champ1": "gpu-011",
+                "100076.champ1": "gpu-011",
+                "100077.champ1": "gpu-011",
+                "100084.champ1": "gpu-011",
+                "100092.champ1": "gpu-011",
+                "100093.champ1": "gpu-011",
+                "100095.champ1": "gpu-011",
+                "100096.champ1": "gpu-011",
+                "100098.champ1": "gpu-011"
+              },
+              "decoded_makespan": 170877,
+              "objective_value": 1148.3030303030305,
+              "runtime_seconds": 0.2832768980001674,
+              "utilization": 0.887047408369763
+            },
+            "job_count": 30,
+            "node_count": 422,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 2677590,
+                "cpu_capacity_term_count": 196230,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 196230,
+                "gpu_compatibility_term_count": 0,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 30,
+                "matrix_dimensions": [
+                  12660,
+                  12660
+                ],
+                "node_count": 422,
+                "objective_scale": 1.0,
+                "objective_term_count": 12660,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 12660
+              },
+              "runtime_seconds": 3.441721617999974,
+              "variable_count": 12660
+            },
+            "sa": {
+              "decoded_assignment": {
+                "100006.champ1": "gpu-008",
+                "100008.champ1": "gpu-011",
+                "100009.champ1": "gpu-011",
+                "100010.champ1": "gpu-009",
+                "100011.champ1": "gpu-011",
+                "100012.champ1": "gpu-008",
+                "100017.champ1": "gpu-010",
+                "100018.champ1": "gpu-008",
+                "100020.champ1": "gpu-011",
+                "100022.champ1": "gpu-008",
+                "100024.champ1": "gpu-008",
+                "100031.champ1": "gpu-011",
+                "100032.champ1": "gpu-009",
+                "100057.champ1": "gpu-011",
+                "100059.champ1": "gpu-011",
+                "100060.champ1": "gpu-011",
+                "100063.champ1": "gpu-011",
+                "100064.champ1": "gpu-009",
+                "100065.champ1": "gpu-011",
+                "100068.champ1": "gpu-011",
+                "100070.champ1": "gpu-011",
+                "100075.champ1": "gpu-011",
+                "100076.champ1": "gpu-010",
+                "100077.champ1": "gpu-010",
+                "100084.champ1": "gpu-010",
+                "100092.champ1": "gpu-011",
+                "100093.champ1": "gpu-010",
+                "100095.champ1": "gpu-011",
+                "100096.champ1": "gpu-009",
+                "100098.champ1": "gpu-011"
+              },
+              "decoded_makespan": 180347,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 345.74169841899993,
+              "utilization": 2.3009088035842016,
+              "validation": {
+                "assignment_violations": 0,
+                "cpu_violations": 4,
+                "details": [
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100006.champ1",
+                      "100012.champ1",
+                      "100018.champ1",
+                      "100022.champ1",
+                      "100024.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-008",
+                    "type": "cpu_capacity_violation",
+                    "used": 608
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100010.champ1",
+                      "100032.champ1",
+                      "100064.champ1",
+                      "100096.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-009",
+                    "type": "cpu_capacity_violation",
+                    "used": 416
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100017.champ1",
+                      "100076.champ1",
+                      "100077.champ1",
+                      "100084.champ1",
+                      "100093.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-010",
+                    "type": "cpu_capacity_violation",
+                    "used": 640
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100008.champ1",
+                      "100009.champ1",
+                      "100011.champ1",
+                      "100020.champ1",
+                      "100031.champ1",
+                      "100057.champ1",
+                      "100059.champ1",
+                      "100060.champ1",
+                      "100063.champ1",
+                      "100065.champ1",
+                      "100068.champ1",
+                      "100070.champ1",
+                      "100075.champ1",
+                      "100092.champ1",
+                      "100095.champ1",
+                      "100098.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-011",
+                    "type": "cpu_capacity_violation",
+                    "used": 1760
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": false
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [],
+      "source_jobs": 30,
+      "source_label": "cpu-only_30",
+      "target_sizes": [
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "benchmarks": [
+        {
+          "label": "gpu-only_10_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 40.0,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.007587408999825129,
+                "qubo_build": 0.5118349509998552,
+                "sa": 36.904211513000064
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "100000.champ1": "gpu-011",
+                "100001.champ1": "gpu-011",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-011",
+                "100007.champ1": "gpu-011",
+                "100016.champ1": "gpu-011",
+                "100029.champ1": "gpu-011",
+                "100035.champ1": "gpu-011",
+                "100036.champ1": "gpu-011",
+                "100037.champ1": "gpu-011"
+              },
+              "decoded_makespan": 194611,
+              "objective_value": 1470.3333333333333,
+              "runtime_seconds": 0.007587408999825129,
+              "utilization": 0.997292033852146
+            },
+            "job_count": 10,
+            "node_count": 422,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 892530,
+                "cpu_capacity_term_count": 23210,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 23210,
+                "gpu_compatibility_term_count": 4100,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  4220,
+                  4220
+                ],
+                "node_count": 422,
+                "objective_scale": 1.0,
+                "objective_term_count": 4220,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 4220
+              },
+              "runtime_seconds": 0.5118349509998552,
+              "variable_count": 4220
+            },
+            "sa": {
+              "decoded_assignment": {
+                "100000.champ1": "gpu-011",
+                "100001.champ1": "gpu-009",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-009",
+                "100007.champ1": "gpu-011",
+                "100016.champ1": "gpu-009",
+                "100029.champ1": "gpu-011",
+                "100035.champ1": "gpu-010",
+                "100036.champ1": "gpu-010",
+                "100037.champ1": "gpu-009"
+              },
+              "decoded_makespan": 181246,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 36.904211513000064,
+              "utilization": 1.0708319080145217,
+              "validation": {
+                "assignment_violations": 0,
+                "cpu_violations": 0,
+                "details": [],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": true
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [
+        20,
+        30
+      ],
+      "source_jobs": 10,
+      "source_label": "gpu-only_10",
+      "target_sizes": [
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "benchmarks": [
+        {
+          "label": "gpu-only_20_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 40.0,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.007509625000238884,
+                "qubo_build": 0.4763873830002012,
+                "sa": 36.89365241199994
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "100000.champ1": "gpu-011",
+                "100001.champ1": "gpu-011",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-011",
+                "100007.champ1": "gpu-011",
+                "100016.champ1": "gpu-011",
+                "100029.champ1": "gpu-011",
+                "100035.champ1": "gpu-011",
+                "100036.champ1": "gpu-011",
+                "100037.champ1": "gpu-011"
+              },
+              "decoded_makespan": 194611,
+              "objective_value": 1470.3333333333333,
+              "runtime_seconds": 0.007509625000238884,
+              "utilization": 0.997292033852146
+            },
+            "job_count": 10,
+            "node_count": 422,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 892530,
+                "cpu_capacity_term_count": 23210,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 23210,
+                "gpu_compatibility_term_count": 4100,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  4220,
+                  4220
+                ],
+                "node_count": 422,
+                "objective_scale": 1.0,
+                "objective_term_count": 4220,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 4220
+              },
+              "runtime_seconds": 0.4763873830002012,
+              "variable_count": 4220
+            },
+            "sa": {
+              "decoded_assignment": {
+                "100000.champ1": "gpu-011",
+                "100001.champ1": "gpu-009",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-009",
+                "100007.champ1": "gpu-011",
+                "100016.champ1": "gpu-009",
+                "100029.champ1": "gpu-011",
+                "100035.champ1": "gpu-010",
+                "100036.champ1": "gpu-010",
+                "100037.champ1": "gpu-009"
+              },
+              "decoded_makespan": 181246,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 36.89365241199994,
+              "utilization": 1.0708319080145217,
+              "validation": {
+                "assignment_violations": 0,
+                "cpu_violations": 0,
+                "details": [],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": true
+              }
+            }
+          }
+        },
+        {
+          "label": "gpu-only_20_20_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 55.0,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.014323851999961335,
+                "qubo_build": 1.6475498640002115,
+                "sa": 148.91732660100024
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "100000.champ1": "gpu-011",
+                "100001.champ1": "gpu-011",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-011",
+                "100007.champ1": "gpu-011",
+                "100016.champ1": "gpu-011",
+                "100029.champ1": "gpu-011",
+                "100035.champ1": "gpu-011",
+                "100036.champ1": "gpu-011",
+                "100037.champ1": "gpu-011",
+                "100039.champ1": "gpu-011",
+                "100040.champ1": "gpu-011",
+                "100041.champ1": "gpu-011",
+                "100042.champ1": "gpu-011",
+                "100043.champ1": "gpu-011",
+                "100044.champ1": "gpu-011",
+                "100045.champ1": "gpu-011",
+                "100046.champ1": "gpu-011",
+                "100049.champ1": "gpu-011",
+                "100050.champ1": "gpu-011"
+              },
+              "decoded_makespan": 195909,
+              "objective_value": 1480.1666666666665,
+              "runtime_seconds": 0.014323851999961335,
+              "utilization": 0.9973099755498727
+            },
+            "job_count": 20,
+            "node_count": 422,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 1785060,
+                "cpu_capacity_term_count": 88620,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 88620,
+                "gpu_compatibility_term_count": 8200,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 20,
+                "matrix_dimensions": [
+                  8440,
+                  8440
+                ],
+                "node_count": 422,
+                "objective_scale": 1.0,
+                "objective_term_count": 8440,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 8440
+              },
+              "runtime_seconds": 1.6475498640002115,
+              "variable_count": 8440
+            },
+            "sa": {
+              "decoded_assignment": {
+                "100000.champ1": "gpu-008",
+                "100001.champ1": "gpu-011",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-009",
+                "100007.champ1": "gpu-011",
+                "100016.champ1": "gpu-008",
+                "100029.champ1": "gpu-010",
+                "100035.champ1": "gpu-008",
+                "100036.champ1": "gpu-011",
+                "100037.champ1": "gpu-008",
+                "100039.champ1": "gpu-008",
+                "100040.champ1": "gpu-011",
+                "100041.champ1": "gpu-009",
+                "100042.champ1": "gpu-011",
+                "100043.champ1": "gpu-011",
+                "100044.champ1": "gpu-011",
+                "100045.champ1": "gpu-011",
+                "100046.champ1": "gpu-009",
+                "100049.champ1": "gpu-011",
+                "100050.champ1": "gpu-011"
+              },
+              "decoded_makespan": 181530,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 148.91732660100024,
+              "utilization": 1.0763069465102186,
+              "validation": {
+                "assignment_violations": 0,
+                "cpu_violations": 0,
+                "details": [
+                  {
+                    "capacity": 4,
+                    "jobs": [
+                      "100000.champ1",
+                      "100016.champ1",
+                      "100035.champ1",
+                      "100037.champ1",
+                      "100039.champ1"
+                    ],
+                    "message": "Assigned GPU demand exceeds node GPU capacity.",
+                    "node_id": "gpu-008",
+                    "type": "gpu_capacity_violation",
+                    "used": 5
+                  },
+                  {
+                    "capacity": 4,
+                    "jobs": [
+                      "100001.champ1",
+                      "100002.champ1",
+                      "100007.champ1",
+                      "100036.champ1",
+                      "100040.champ1",
+                      "100042.champ1",
+                      "100043.champ1",
+                      "100044.champ1",
+                      "100045.champ1",
+                      "100049.champ1",
+                      "100050.champ1"
+                    ],
+                    "message": "Assigned GPU demand exceeds node GPU capacity.",
+                    "node_id": "gpu-011",
+                    "type": "gpu_capacity_violation",
+                    "used": 11
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 2,
+                "valid": false
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [
+        30
+      ],
+      "source_jobs": 20,
+      "source_label": "gpu-only_20",
+      "target_sizes": [
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "benchmarks": [
+        {
+          "label": "mixed_10_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 33.333333333333336,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.04925090000006094,
+                "qubo_build": 0.46479957400015337,
+                "sa": 37.98434424400011
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "100000.champ1": "gpu-011",
+                "100001.champ1": "gpu-011",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-011",
+                "100007.champ1": "gpu-011",
+                "100011.champ1": "gpu-011"
+              },
+              "decoded_makespan": 7835,
+              "objective_value": 58.67424242424243,
+              "runtime_seconds": 0.04925090000006094,
+              "utilization": 0.98851308232291
+            },
+            "job_count": 10,
+            "node_count": 422,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 892530,
+                "cpu_capacity_term_count": 23210,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 23210,
+                "gpu_compatibility_term_count": 2050,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  4220,
+                  4220
+                ],
+                "node_count": 422,
+                "objective_scale": 1.0,
+                "objective_term_count": 4220,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 4220
+              },
+              "runtime_seconds": 0.46479957400015337,
+              "variable_count": 4220
+            },
+            "sa": {
+              "decoded_assignment": {
+                "100000.champ1": "gpu-011",
+                "100001.champ1": "gpu-009",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-009",
+                "100006.champ1": "gpu-011",
+                "100007.champ1": "gpu-009",
+                "100008.champ1": "gpu-011",
+                "100009.champ1": "gpu-010",
+                "100010.champ1": "gpu-010",
+                "100011.champ1": "gpu-009"
+              },
+              "decoded_makespan": 207421,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 37.98434424400011,
+              "utilization": 1.237647104198707,
+              "validation": {
+                "assignment_violations": 0,
+                "cpu_violations": 2,
+                "details": [
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100001.champ1",
+                      "100003.champ1",
+                      "100007.champ1",
+                      "100011.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-009",
+                    "type": "cpu_capacity_violation",
+                    "used": 131
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100000.champ1",
+                      "100002.champ1",
+                      "100006.champ1",
+                      "100008.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-011",
+                    "type": "cpu_capacity_violation",
+                    "used": 130
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": false
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [
+        20,
+        30
+      ],
+      "source_jobs": 10,
+      "source_label": "mixed_10",
+      "target_sizes": [
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "benchmarks": [
+        {
+          "label": "mixed_20_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 33.333333333333336,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.010958840000057535,
+                "qubo_build": 0.47079052600020077,
+                "sa": 36.9883292049999
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "100000.champ1": "gpu-011",
+                "100001.champ1": "gpu-011",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-011",
+                "100007.champ1": "gpu-011",
+                "100011.champ1": "gpu-011"
+              },
+              "decoded_makespan": 7835,
+              "objective_value": 58.67424242424243,
+              "runtime_seconds": 0.010958840000057535,
+              "utilization": 0.98851308232291
+            },
+            "job_count": 10,
+            "node_count": 422,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 892530,
+                "cpu_capacity_term_count": 23210,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 23210,
+                "gpu_compatibility_term_count": 2050,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  4220,
+                  4220
+                ],
+                "node_count": 422,
+                "objective_scale": 1.0,
+                "objective_term_count": 4220,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 4220
+              },
+              "runtime_seconds": 0.47079052600020077,
+              "variable_count": 4220
+            },
+            "sa": {
+              "decoded_assignment": {
+                "100000.champ1": "gpu-011",
+                "100001.champ1": "gpu-009",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-009",
+                "100006.champ1": "gpu-011",
+                "100007.champ1": "gpu-009",
+                "100008.champ1": "gpu-011",
+                "100009.champ1": "gpu-010",
+                "100010.champ1": "gpu-010",
+                "100011.champ1": "gpu-009"
+              },
+              "decoded_makespan": 207421,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 36.9883292049999,
+              "utilization": 1.237647104198707,
+              "validation": {
+                "assignment_violations": 0,
+                "cpu_violations": 2,
+                "details": [
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100001.champ1",
+                      "100003.champ1",
+                      "100007.champ1",
+                      "100011.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-009",
+                    "type": "cpu_capacity_violation",
+                    "used": 131
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100000.champ1",
+                      "100002.champ1",
+                      "100006.champ1",
+                      "100008.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-011",
+                    "type": "cpu_capacity_violation",
+                    "used": 130
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": false
+              }
+            }
+          }
+        },
+        {
+          "label": "mixed_20_20_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 56.25,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.04003073600006246,
+                "qubo_build": 1.665149478999865,
+                "sa": 150.0034990119998
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "100000.champ1": "gpu-011",
+                "100001.champ1": "gpu-011",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-011",
+                "100007.champ1": "gpu-011",
+                "100011.champ1": "gpu-011",
+                "100012.champ1": "gpu-011",
+                "100016.champ1": "gpu-011",
+                "100017.champ1": "gpu-011",
+                "100018.champ1": "gpu-011",
+                "100020.champ1": "gpu-011",
+                "100022.champ1": "gpu-011",
+                "100024.champ1": "gpu-011",
+                "100029.champ1": "gpu-011",
+                "100031.champ1": "gpu-011",
+                "100032.champ1": "gpu-011"
+              },
+              "decoded_makespan": 198935,
+              "objective_value": 1506.401515151515,
+              "runtime_seconds": 0.04003073600006246,
+              "utilization": 0.9995475909216578
+            },
+            "job_count": 20,
+            "node_count": 422,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 1785060,
+                "cpu_capacity_term_count": 88620,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 88620,
+                "gpu_compatibility_term_count": 2870,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 20,
+                "matrix_dimensions": [
+                  8440,
+                  8440
+                ],
+                "node_count": 422,
+                "objective_scale": 1.0,
+                "objective_term_count": 8440,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 8440
+              },
+              "runtime_seconds": 1.665149478999865,
+              "variable_count": 8440
+            },
+            "sa": {
+              "decoded_assignment": {
+                "100000.champ1": "gpu-008",
+                "100001.champ1": "gpu-011",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-009",
+                "100006.champ1": "gpu-011",
+                "100007.champ1": "gpu-008",
+                "100008.champ1": "gpu-010",
+                "100009.champ1": "gpu-008",
+                "100010.champ1": "gpu-011",
+                "100011.champ1": "gpu-008",
+                "100012.champ1": "gpu-008",
+                "100016.champ1": "gpu-011",
+                "100017.champ1": "gpu-009",
+                "100018.champ1": "gpu-011",
+                "100020.champ1": "gpu-011",
+                "100022.champ1": "gpu-011",
+                "100024.champ1": "gpu-011",
+                "100029.champ1": "gpu-009",
+                "100031.champ1": "gpu-011",
+                "100032.champ1": "gpu-011"
+              },
+              "decoded_makespan": 371142,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 150.0034990119998,
+              "utilization": 1.2065840028883823,
+              "validation": {
+                "assignment_violations": 0,
+                "cpu_violations": 3,
+                "details": [
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100000.champ1",
+                      "100007.champ1",
+                      "100009.champ1",
+                      "100011.champ1",
+                      "100012.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-008",
+                    "type": "cpu_capacity_violation",
+                    "used": 290
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100003.champ1",
+                      "100017.champ1",
+                      "100029.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-009",
+                    "type": "cpu_capacity_violation",
+                    "used": 130
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100001.champ1",
+                      "100002.champ1",
+                      "100006.champ1",
+                      "100010.champ1",
+                      "100016.champ1",
+                      "100018.champ1",
+                      "100020.champ1",
+                      "100022.champ1",
+                      "100024.champ1",
+                      "100031.champ1",
+                      "100032.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-011",
+                    "type": "cpu_capacity_violation",
+                    "used": 899
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": false
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [
+        30
+      ],
+      "source_jobs": 20,
+      "source_label": "mixed_20",
+      "target_sizes": [
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "benchmarks": [
+        {
+          "label": "mixed_30_10_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 33.333333333333336,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.009319542999946862,
+                "qubo_build": 0.47718276600016907,
+                "sa": 37.05038577200003
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "100000.champ1": "gpu-011",
+                "100001.champ1": "gpu-011",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-011",
+                "100007.champ1": "gpu-011",
+                "100011.champ1": "gpu-011"
+              },
+              "decoded_makespan": 7835,
+              "objective_value": 58.67424242424243,
+              "runtime_seconds": 0.009319542999946862,
+              "utilization": 0.98851308232291
+            },
+            "job_count": 10,
+            "node_count": 422,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 892530,
+                "cpu_capacity_term_count": 23210,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 23210,
+                "gpu_compatibility_term_count": 2050,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 10,
+                "matrix_dimensions": [
+                  4220,
+                  4220
+                ],
+                "node_count": 422,
+                "objective_scale": 1.0,
+                "objective_term_count": 4220,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 4220
+              },
+              "runtime_seconds": 0.47718276600016907,
+              "variable_count": 4220
+            },
+            "sa": {
+              "decoded_assignment": {
+                "100000.champ1": "gpu-011",
+                "100001.champ1": "gpu-009",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-009",
+                "100006.champ1": "gpu-011",
+                "100007.champ1": "gpu-009",
+                "100008.champ1": "gpu-011",
+                "100009.champ1": "gpu-010",
+                "100010.champ1": "gpu-010",
+                "100011.champ1": "gpu-009"
+              },
+              "decoded_makespan": 207421,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 37.05038577200003,
+              "utilization": 1.237647104198707,
+              "validation": {
+                "assignment_violations": 0,
+                "cpu_violations": 2,
+                "details": [
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100001.champ1",
+                      "100003.champ1",
+                      "100007.champ1",
+                      "100011.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-009",
+                    "type": "cpu_capacity_violation",
+                    "used": 131
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100000.champ1",
+                      "100002.champ1",
+                      "100006.champ1",
+                      "100008.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-011",
+                    "type": "cpu_capacity_violation",
+                    "used": 130
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": false
+              }
+            }
+          }
+        },
+        {
+          "label": "mixed_30_20_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 56.25,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.14916501500010781,
+                "qubo_build": 1.5830597530002706,
+                "sa": 156.18298143899983
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "100000.champ1": "gpu-011",
+                "100001.champ1": "gpu-011",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-011",
+                "100007.champ1": "gpu-011",
+                "100011.champ1": "gpu-011",
+                "100012.champ1": "gpu-011",
+                "100016.champ1": "gpu-011",
+                "100017.champ1": "gpu-011",
+                "100018.champ1": "gpu-011",
+                "100020.champ1": "gpu-011",
+                "100022.champ1": "gpu-011",
+                "100024.champ1": "gpu-011",
+                "100029.champ1": "gpu-011",
+                "100031.champ1": "gpu-011",
+                "100032.champ1": "gpu-011"
+              },
+              "decoded_makespan": 198935,
+              "objective_value": 1506.401515151515,
+              "runtime_seconds": 0.14916501500010781,
+              "utilization": 0.9995475909216578
+            },
+            "job_count": 20,
+            "node_count": 422,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 1785060,
+                "cpu_capacity_term_count": 88620,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 88620,
+                "gpu_compatibility_term_count": 2870,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 20,
+                "matrix_dimensions": [
+                  8440,
+                  8440
+                ],
+                "node_count": 422,
+                "objective_scale": 1.0,
+                "objective_term_count": 8440,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 8440
+              },
+              "runtime_seconds": 1.5830597530002706,
+              "variable_count": 8440
+            },
+            "sa": {
+              "decoded_assignment": {
+                "100000.champ1": "gpu-008",
+                "100001.champ1": "gpu-011",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-009",
+                "100006.champ1": "gpu-011",
+                "100007.champ1": "gpu-008",
+                "100008.champ1": "gpu-010",
+                "100009.champ1": "gpu-008",
+                "100010.champ1": "gpu-011",
+                "100011.champ1": "gpu-008",
+                "100012.champ1": "gpu-008",
+                "100016.champ1": "gpu-011",
+                "100017.champ1": "gpu-009",
+                "100018.champ1": "gpu-011",
+                "100020.champ1": "gpu-011",
+                "100022.champ1": "gpu-011",
+                "100024.champ1": "gpu-011",
+                "100029.champ1": "gpu-009",
+                "100031.champ1": "gpu-011",
+                "100032.champ1": "gpu-011"
+              },
+              "decoded_makespan": 371142,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 156.18298143899983,
+              "utilization": 1.2065840028883823,
+              "validation": {
+                "assignment_violations": 0,
+                "cpu_violations": 3,
+                "details": [
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100000.champ1",
+                      "100007.champ1",
+                      "100009.champ1",
+                      "100011.champ1",
+                      "100012.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-008",
+                    "type": "cpu_capacity_violation",
+                    "used": 290
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100003.champ1",
+                      "100017.champ1",
+                      "100029.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-009",
+                    "type": "cpu_capacity_violation",
+                    "used": 130
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100001.champ1",
+                      "100002.champ1",
+                      "100006.champ1",
+                      "100010.champ1",
+                      "100016.champ1",
+                      "100018.champ1",
+                      "100020.champ1",
+                      "100022.champ1",
+                      "100024.champ1",
+                      "100031.champ1",
+                      "100032.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-011",
+                    "type": "cpu_capacity_violation",
+                    "used": 899
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 0,
+                "valid": false
+              }
+            }
+          }
+        },
+        {
+          "label": "mixed_30_30_jobs",
+          "result": {
+            "comparison": {
+              "assignment_overlap_with_cp_sat_pct": 53.84615384615385,
+              "brute_force": {},
+              "energy_gap_vs_bruteforce": null,
+              "matches": {
+                "sa_assignment_match_pct_vs_bruteforce": null,
+                "sa_assignment_match_pct_vs_cp_sat": 0.0,
+                "sa_matches_bruteforce": null,
+                "sa_matches_cp_sat": false
+              },
+              "runtime_seconds": {
+                "brute_force": null,
+                "cp_sat": 0.049178965000010066,
+                "qubo_build": 3.383439570000064,
+                "sa": 338.2915677670003
+              }
+            },
+            "cp_sat": {
+              "assignment": {
+                "100000.champ1": "gpu-011",
+                "100001.champ1": "gpu-011",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-011",
+                "100007.champ1": "gpu-011",
+                "100011.champ1": "gpu-011",
+                "100012.champ1": "gpu-011",
+                "100016.champ1": "gpu-011",
+                "100017.champ1": "gpu-011",
+                "100018.champ1": "gpu-011",
+                "100020.champ1": "gpu-011",
+                "100022.champ1": "gpu-011",
+                "100024.champ1": "gpu-011",
+                "100029.champ1": "gpu-011",
+                "100031.champ1": "gpu-011",
+                "100032.champ1": "gpu-011",
+                "100035.champ1": "gpu-011",
+                "100036.champ1": "gpu-011",
+                "100037.champ1": "gpu-011",
+                "100039.champ1": "gpu-011",
+                "100040.champ1": "gpu-011",
+                "100041.champ1": "gpu-011",
+                "100042.champ1": "gpu-011",
+                "100043.champ1": "gpu-011",
+                "100044.champ1": "gpu-011",
+                "100045.champ1": "gpu-011"
+              },
+              "decoded_makespan": 200476,
+              "objective_value": 1518.0757575757573,
+              "runtime_seconds": 0.049178965000010066,
+              "utilization": 0.9995510684570722
+            },
+            "job_count": 30,
+            "node_count": 422,
+            "qubo": {
+              "metadata": {
+                "alpha_assign": 10.0,
+                "alpha_capacity": 0.0,
+                "alpha_gpu_compat": 10.0,
+                "assignment_term_count": 2677590,
+                "cpu_capacity_term_count": 196230,
+                "excluded_terms": [
+                  "communication_penalty",
+                  "dependency_penalty",
+                  "feature_compatibility_penalty",
+                  "multi_node_jobs"
+                ],
+                "formulation": "mapping_only_qubo_v1",
+                "gpu_capacity_term_count": 196230,
+                "gpu_compatibility_term_count": 6970,
+                "included_terms": [
+                  "objective_runtime_cost",
+                  "assignment_uniqueness",
+                  "cpu_capacity_penalty",
+                  "gpu_capacity_penalty",
+                  "gpu_compatibility_penalty"
+                ],
+                "job_count": 30,
+                "matrix_dimensions": [
+                  12660,
+                  12660
+                ],
+                "node_count": 422,
+                "objective_scale": 1.0,
+                "objective_term_count": 12660,
+                "reference_alignment": "paper_style_task_node_mapping",
+                "variable_count": 12660
+              },
+              "runtime_seconds": 3.383439570000064,
+              "variable_count": 12660
+            },
+            "sa": {
+              "decoded_assignment": {
+                "100000.champ1": "gpu-008",
+                "100001.champ1": "gpu-011",
+                "100002.champ1": "gpu-011",
+                "100003.champ1": "gpu-009",
+                "100006.champ1": "gpu-011",
+                "100007.champ1": "gpu-008",
+                "100008.champ1": "gpu-010",
+                "100009.champ1": "gpu-008",
+                "100010.champ1": "gpu-011",
+                "100011.champ1": "gpu-008",
+                "100012.champ1": "gpu-008",
+                "100016.champ1": "gpu-011",
+                "100017.champ1": "gpu-009",
+                "100018.champ1": "gpu-011",
+                "100020.champ1": "gpu-011",
+                "100022.champ1": "gpu-011",
+                "100024.champ1": "gpu-011",
+                "100029.champ1": "gpu-009",
+                "100031.champ1": "gpu-011",
+                "100032.champ1": "gpu-011",
+                "100035.champ1": "gpu-011",
+                "100036.champ1": "gpu-011",
+                "100037.champ1": "gpu-010",
+                "100039.champ1": "gpu-010",
+                "100040.champ1": "gpu-010",
+                "100041.champ1": "gpu-011",
+                "100042.champ1": "gpu-010",
+                "100043.champ1": "gpu-011",
+                "100044.champ1": "gpu-009",
+                "100045.champ1": "gpu-011"
+              },
+              "decoded_makespan": 371826,
+              "feasibility_rate": 0.0,
+              "objective_value": null,
+              "qubo_energy": null,
+              "runtime_seconds": 338.2915677670003,
+              "utilization": 1.2085088186409771,
+              "validation": {
+                "assignment_violations": 0,
+                "cpu_violations": 3,
+                "details": [
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100000.champ1",
+                      "100007.champ1",
+                      "100009.champ1",
+                      "100011.champ1",
+                      "100012.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-008",
+                    "type": "cpu_capacity_violation",
+                    "used": 290
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100003.champ1",
+                      "100017.champ1",
+                      "100029.champ1",
+                      "100044.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-009",
+                    "type": "cpu_capacity_violation",
+                    "used": 131
+                  },
+                  {
+                    "capacity": 128,
+                    "jobs": [
+                      "100001.champ1",
+                      "100002.champ1",
+                      "100006.champ1",
+                      "100010.champ1",
+                      "100016.champ1",
+                      "100018.champ1",
+                      "100020.champ1",
+                      "100022.champ1",
+                      "100024.champ1",
+                      "100031.champ1",
+                      "100032.champ1",
+                      "100035.champ1",
+                      "100036.champ1",
+                      "100041.champ1",
+                      "100043.champ1",
+                      "100045.champ1"
+                    ],
+                    "message": "Assigned CPU demand exceeds node CPU capacity.",
+                    "node_id": "gpu-011",
+                    "type": "cpu_capacity_violation",
+                    "used": 904
+                  },
+                  {
+                    "capacity": 4,
+                    "jobs": [
+                      "100001.champ1",
+                      "100002.champ1",
+                      "100006.champ1",
+                      "100010.champ1",
+                      "100016.champ1",
+                      "100018.champ1",
+                      "100020.champ1",
+                      "100022.champ1",
+                      "100024.champ1",
+                      "100031.champ1",
+                      "100032.champ1",
+                      "100035.champ1",
+                      "100036.champ1",
+                      "100041.champ1",
+                      "100043.champ1",
+                      "100045.champ1"
+                    ],
+                    "message": "Assigned GPU demand exceeds node GPU capacity.",
+                    "node_id": "gpu-011",
+                    "type": "gpu_capacity_violation",
+                    "used": 8
+                  }
+                ],
+                "gpu_compatibility_violations": 0,
+                "gpu_violations": 1,
+                "valid": false
+              }
+            }
+          }
+        }
+      ],
+      "skipped_sizes": [],
+      "source_jobs": 30,
+      "source_label": "mixed_30",
+      "target_sizes": [
+        10,
+        20,
+        30
+      ]
+    }
+  ]
+}

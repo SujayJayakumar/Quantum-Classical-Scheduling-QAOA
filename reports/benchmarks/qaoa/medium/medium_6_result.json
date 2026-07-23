@@ -1,0 +1,40 @@
+{
+  "bucket": "medium",
+  "comparison": {
+    "approx_cpsat": 0.9543588732444859,
+    "approx_sa": 0.9543588732444859,
+    "energy_gap_vs_cpsat": 7.7159090909090935,
+    "energy_gap_vs_sa": 7.7159090909090935,
+    "makespan_gap_vs_cpsat": -2981,
+    "makespan_gap_vs_sa": 7,
+    "overlap_pct": 41.66666666666667
+  },
+  "cpsat": {
+    "energy": -169.0560606060606,
+    "feasible": false,
+    "makespan": 12748297,
+    "obj": 5.471969696969697,
+    "runtime": 0.0014397751074284315
+  },
+  "jobs": 12,
+  "label": "medium_6",
+  "matrix_size": "24x24",
+  "nodes": 2,
+  "qaoa": {
+    "energy": -161.34015151515152,
+    "feasible": false,
+    "makespan": 12745316,
+    "obj": 3.1878787878787884,
+    "runtime": 0.5184818499255925
+  },
+  "qubits": 24,
+  "qubo_build_time": 0.00011340598575770855,
+  "sa": {
+    "energy": -169.0560606060606,
+    "feasible": false,
+    "makespan": 12745309,
+    "obj": 5.471969696969697,
+    "runtime": 0.12418944179080427
+  },
+  "variables": 24
+}
